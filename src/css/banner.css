@@ -35,58 +35,60 @@
 }
 #banner .container .banner {
   margin: 0;
-  position: relative;
-  overflow: hidden;
   margin-right: 10px;
+  position: relative;
 }
-#banner .container .banner > .img {
+#banner .container .banner > .swiper-container {
+  cursor: pointer;
   margin-top: 10px;
 }
-#banner .container .banner > .img img {
+#banner .container .banner > .swiper-container > .swiper-wrapper {
   width: 590px;
-  height: 470px;
 }
-#banner .container .banner > .img span {
-  display: block;
+#banner .container .banner > .swiper-container > .swiper-wrapper > .swiper-slide {
+  width: 590px;
+  float: left;
+  height: 470px;
+  background-color: green;
+}
+#banner .container .banner > .swiper-container > .swiper-wrapper > .swiper-slide > img {
+  width: 100%;
+  height: 100%;
+}
+#banner .container .banner > .swiper-container > .swiper-pagination {
+  margin-bottom: 15px;
+}
+#banner .container .banner > .swiper-container > .swiper-pagination > span {
+  float: left;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 2px;
+}
+#banner .container .banner > .swiper-container > .swiper-pagination > span:first-of-type {
+  margin-left: 35px;
+}
+#banner .container .banner > .swiper-container > .swiper-button-prev,
+#banner .container .banner > .swiper-container > .swiper-button-next {
   width: 25px;
   height: 35px;
   line-height: 35px;
+  text-align: center;
   color: white;
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.2);
+  background-image: none;
   transition: 0.3s;
-  top: 50%;
-  margin-top: -13px;
-  cursor: pointer;
 }
-#banner .container .banner > .img span:nth-of-type(1) {
-  left: 0;
-  text-align: left;
-  border-radius: 0 18px 18px 0;
-}
-#banner .container .banner > .img span:nth-of-type(2) {
-  right: 0;
-  text-align: right;
-  border-radius: 18px  0 0 18px;
-}
-#banner .container .banner > .img span:hover {
+#banner .container .banner > .swiper-container > .swiper-button-prev:hover,
+#banner .container .banner > .swiper-container > .swiper-button-next:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
-#banner .container .banner > .list {
-  position: absolute;
-  bottom: 20px;
-  width: 115px;
-  padding: 2px 0;
-  left: 30px;
+#banner .container .banner > .swiper-container > .swiper-button-prev {
+  margin-left: -9px;
+  border-radius: 0 18px 18px 0;
 }
-#banner .container .banner > .list > span {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin-right: 4px;
-  border-radius: 50%;
-  float: left;
-  background-color: rgba(255, 255, 255, 0.4);
+#banner .container .banner > .swiper-container > .swiper-button-next {
+  margin-right: -9px;
+  border-radius: 18px  0 0 18px;
 }
 #banner .container .right1 {
   margin: 0;
@@ -98,49 +100,52 @@
   justify-content: space-between;
   overflow: hidden;
 }
-#banner .container .right1 div {
-  width: 190px;
-  height: 150px;
-  cursor: pointer;
-}
-#banner .container .right1 div img {
+#banner .container .right1 > .swiper-container1 {
   width: 100%;
   height: 100%;
 }
-#banner .container .right1 div img:hover {
-  opacity: 0.8;
+#banner .container .right1 > .swiper-container1 .swiper-slide {
+  background-color: white;
+  cursor: pointer;
 }
-#banner .container .right1 > .hover {
-  position: relative;
-}
-#banner .container .right1 > .hover span {
-  opacity: 0;
+#banner .container .right1 > .swiper-container1 .swiper-slide .swiper-button-prev,
+#banner .container .right1 > .swiper-container1 .swiper-slide .swiper-button-next {
   width: 25px;
   height: 35px;
   line-height: 35px;
+  text-align: center;
   color: white;
-  position: absolute;
-  top: 50%;
-  margin-top: -18px;
   background-color: rgba(0, 0, 0, 0.2);
+  background-image: none;
   transition: 0.3s;
-  cursor: pointer;
+  opacity: 0;
 }
-#banner .container .right1 > .hover span:nth-of-type(1) {
-  left: 0;
-  text-align: left;
-  border-radius: 0 18px 18px 0;
-}
-#banner .container .right1 > .hover span:nth-of-type(2) {
-  right: 0;
-  text-align: right;
-  border-radius: 18px  0 0 18px;
-}
-#banner .container .right1 > .hover span:hover {
+#banner .container .right1 > .swiper-container1 .swiper-slide .swiper-button-prev:hover,
+#banner .container .right1 > .swiper-container1 .swiper-slide .swiper-button-next:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
-#banner .container .right1:hover > .hover span {
+#banner .container .right1 > .swiper-container1 .swiper-slide .swiper-button-prev {
+  margin-left: -9px;
+  border-radius: 0 18px 18px 0;
+}
+#banner .container .right1 > .swiper-container1 .swiper-slide .swiper-button-next {
+  margin-right: -9px;
+  border-radius: 18px  0 0 18px;
+}
+#banner .container .right1 > .swiper-container1 .swiper-slide:hover .swiper-button-prev {
   opacity: 1;
+}
+#banner .container .right1 > .swiper-container1 .swiper-slide:hover .swiper-button-next {
+  opacity: 1;
+}
+#banner .container .right1 img {
+  width: 185px;
+  height: 150px;
+  display: block;
+  margin-bottom: 10px;
+}
+#banner .container .right1 img:hover {
+  opacity: 0.8;
 }
 #banner .container .right2 {
   margin-top: 10px;

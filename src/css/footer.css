@@ -191,9 +191,29 @@
 }
 #footer > .container > .mod_copyright > .mod_copyright_info > .center {
   height: 21px;
+  font-size: 14px;
 }
 #footer > .container > .mod_copyright > .mod_copyright_info > .center > a:first-of-type {
-  margin-left: 260px;
+  margin-left: 290px;
+}
+#footer > .container > .mod_copyright > .mod_copyright_info > .bottom {
+  overflow: hidden;
+  margin: 25px 0;
+}
+#footer > .container > .mod_copyright > .mod_copyright_info > .bottom > a {
+  margin: 0 3px;
+  padding-left: 36px;
+  float: left;
+  font-size: 14px;
+  display: block;
+  width: 67px;
+  height: 36px;
+}
+#footer > .container > .mod_copyright > .mod_copyright_info > .bottom > a:first-of-type {
+  margin-left: 250px;
+}
+#footer > .container > .mod_copyright > .mod_copyright_info > .bottom > a:nth-of-type(3) {
+  line-height: 36px;
 }
 .icon {
   width: 1em;
