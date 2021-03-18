@@ -1,0 +1,373 @@
+@charset "utf-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  width: 100%;
+  height: 110px;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+}
+header > .container {
+  width: 1210px;
+  height: 75px;
+}
+header > .container > img {
+  width: 160px;
+  margin-top: 24px;
+  height: 50px;
+  float: left;
+  margin-right: 20px;
+}
+header > .container > span {
+  float: left;
+  margin-top: 40px;
+  width: 96px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 24px;
+}
+header > .container > div {
+  float: right;
+  margin-top: 58px;
+  color: #777;
+}
+header > .container > div a {
+  color: red;
+}
+header > .container > div a:hover {
+  color: #C81623;
+  text-decoration: underline;
+}
+main {
+  width: 100%;
+  overflow: hidden;
+}
+main > .container {
+  width: 1210px;
+  height: 406px;
+  padding-bottom: 186px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+main > .container > .span_uname {
+  position: absolute;
+  width: 200px;
+  right: 200px;
+  top: 115px;
+}
+main > .container > .span_pwd {
+  position: absolute;
+  width: 200px;
+  right: 200px;
+  top: 195px;
+}
+main > .container > .span_truePwd {
+  position: absolute;
+  right: 200px;
+  width: 200px;
+  top: 270px;
+}
+main > .container > .top {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+}
+main > .container > .top > div:nth-of-type(odd) {
+  text-align: center;
+  font-size: 12px;
+  width: 70px;
+}
+main > .container > .top > div:nth-of-type(odd) > span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+main > .container > .top > div:nth-of-type(odd):first-of-type > span {
+  background-color: #13b813;
+  border: none;
+  color: white;
+}
+main > .container > .top > .arrow {
+  height: 10px;
+  margin-top: 8px;
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #ccc;
+}
+main > .container > .main {
+  width: 400px;
+  height: 246px;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+main > .container > .main > .phone {
+  width: 100%;
+  height: 50px;
+}
+main > .container > .main > .phone > div {
+  cursor: pointer;
+  float: left;
+}
+main > .container > .main > .phone > div:first-of-type {
+  width: 85px;
+  height: 50px;
+  padding-left: 20px;
+  line-height: 50px;
+  text-align: left;
+  font-size: 14px;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+main > .container > .main > .phone > div:first-of-type:hover {
+  border-color: black;
+}
+main > .container > .main > .phone > div:first-of-type > span:first-of-type {
+  width: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main > .container > .main > .phone > div:first-of-type > span:nth-of-type(2) {
+  margin-top: 1px;
+}
+main > .container > .main > .phone > div:nth-of-type(2) {
+  width: 290px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+main > .container > .main > .phone > div:nth-of-type(2):hover {
+  border-color: black;
+}
+main > .container > .main > .phone > div:nth-of-type(2) > input {
+  margin-left: 20px;
+  height: 30px;
+  margin-top: 11px;
+  border: none;
+  outline: none;
+}
+main > .container > .main > .tips {
+  margin-top: 10px;
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  color: #f91;
+  font-size: 12px;
+}
+main > .container > .main > .tips span {
+  float: left;
+  margin-right: 5px;
+}
+main > .container > .main > .tips span:last-of-type {
+  font-size: 10px;
+}
+main > .container > .main > .verification {
+  width: 398px;
+  height: 52px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  line-height: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+main > .container > .main > .verification:hover {
+  border-color: black;
+}
+main > .container > .main > .next {
+  width: 400px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  background-color: #e2231a;
+  cursor: pointer;
+}
+main > .container > .main > .next:hover {
+  background-color: #C81623;
+}
+main > .container > .main1 {
+  width: 400px;
+  height: 246px;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+main > .container > .main1 > div {
+  width: 398px ;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+}
+main > .container > .main1 > div > span {
+  color: #7e7c7c;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  display: block;
+  width: 85px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+main > .container > .main1 > div > input {
+  width: 240px;
+  margin-left: 20px;
+  height: 30px;
+  margin-top: 11px;
+  border: none;
+  outline: none;
+}
+main > .container > .main1 > span {
+  display: block;
+  cursor: pointer;
+  width: 400px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #e2231a;
+  color: white;
+}
+main > .container > .main1 > span:hover {
+  background-color: #C81623;
+}
+main > .container > .main2 {
+  width: 400px;
+  height: 246px;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+main > .container > .main2 > span {
+  margin-bottom: 10px;
+}
+main > .container > .main2 > span:first-of-type {
+  font-size: 50px;
+  color: #27a847;
+}
+main > .container > .main2 > span:nth-of-type(2) {
+  font-size: 18px;
+  color: #777;
+  font-weight: bold;
+}
+main > .container > .main2 > span:nth-of-type(3) {
+  font-size: 12px;
+  color: #ccc;
+}
+main > .container > .main2 > span:nth-of-type(4) {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #e2231a;
+}
+main > .container > .main2 > span:nth-of-type(4):hover {
+  background-color: #C81623;
+}
+main > .container > .main2 > div {
+  margin-top: 60px;
+  margin-left: -110px;
+  width: 100%;
+  height: 50px;
+}
+main > .container > .main2 > div img {
+  width: 600px;
+  height: 150px;
+}
+main > .container > .bottom {
+  width: 400px;
+  margin-top: 15px;
+  height: 28px;
+  line-height: 28px;
+}
+main > .container > .bottom > div {
+  font-size: 14px;
+  float: left;
+  width: 120px;
+  height: 28px;
+  cursor: pointer;
+}
+main > .container > .bottom > div span {
+  float: left;
+}
+main > .container > .bottom > div > span:first-of-type {
+  font-size: 20px;
+  margin-right: 5px;
+}
+main > .container > .bottom > div > span:last-of-type:hover {
+  color: #c91623;
+}
+main > .container > .bottom > div:last-of-type {
+  float: right;
+}
+main > .container > .bottom > div:last-of-type span {
+  margin-left: 4px;
+}
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+footer > .container {
+  width: 1210px;
+  height: 120px;
+  font-size: 12px;
+  display: flex;
+  color: #999;
+  flex-direction: column;
+}
+footer > .container > ul {
+  padding: 30px 0 15px 0;
+  list-style: none;
+}
+footer > .container > ul > li {
+  position: relative;
+  width: 70px;
+  font-size: 12px;
+  cursor: pointer;
+  float: left;
+}
+footer > .container > ul > li::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 17px;
+  right: 12px;
+  top: 0;
+  background-color: #ccc;
+}
+footer > .container > ul > li:last-child::after {
+  display: none;
+}
+footer > .container > ul li:hover {
+  text-decoration: underline;
+}
+footer > .container span {
+  margin-top: 10px;
+}

@@ -1,0 +1,66 @@
+@charset "utf-8";
+#jd_seckill {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+#jd_seckill > .container {
+  padding-top: 30px;
+  width: 1190px;
+  overflow: hidden;
+}
+#jd_seckill > .container > .left {
+  width: 190px;
+  height: 260px;
+  background: url("../img/jd_seckill/bg.png");
+  float: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#jd_seckill > .container > .left > span {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 31px;
+}
+#jd_seckill > .container > .left > div:first-of-type {
+  margin-top: 90px;
+}
+#jd_seckill > .container > .left > div:first-of-type > span:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+}
+#jd_seckill > .container > .left > div:first-of-type > span:last-of-type {
+  font-size: 14px;
+}
+#jd_seckill > .container > .left > div:last-of-type {
+  margin-top: 18px;
+  display: flex;
+}
+#jd_seckill > .container > .left > div:last-of-type > span:nth-child(odd) {
+  width: 30px;
+  height: 30px;
+  background-color: #313131;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+#jd_seckill > .container > .left > div:last-of-type > span:nth-child(even) {
+  font-size: 18px;
+  margin: 0 8px;
+}
+#jd_seckill > .container > .center {
+  float: left;
+  margin: 0;
+  width: 800px;
+  height: 260px;
+  background-color: white;
+}
+#jd_seckill > .container > .right {
+  float: left;
+  width: 180px;
+  padding: 10px;
+  height: 260px;
+  background-color: white;
+}

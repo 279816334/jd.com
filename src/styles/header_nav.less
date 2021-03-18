@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height:2000px;
+    background-color: #f4f4f4;
+} 
+
+a{
+    text-decoration: none;
+    color: #999;
+}
+
+.red{
+    color: red;
+}
+
+#top1{
+    // overflow:hidden;
+    background-color: rgba(0,0,0,0.1);
+   
+    >.container{
+        width: 1190px;
+        // overflow:hidden;
+        position: relative;
+        font-size: 12px;
+              
+
+        >div{
+            width: 60px;
+            float: left;
+            line-height: 30px;
+            
+        }
+
+        
+        >ul{
+            margin-right: 0;
+            list-style: none;
+            width: 720px;
+
+            &::after{
+                content: '';
+                display: block;;
+                overflow: hidden;
+                visibility: hidden;
+                width: 0;
+                height: 0;
+                clear: both;
+            }
+
+            
+
+            >li{
+                float: left;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+                position: relative;
+                padding:0 5px;
+                position: relative;
+                z-index: 999;
+
+
+                &:nth-of-type(1){
+                    width: 133px;
+                    margin-left: 5px;
+                   
+                }
+                
+                &:nth-of-type(2),&:nth-of-type(4),&:nth-of-type(8){
+                    width: 62px;
+                }
+
+                &:nth-of-type(3){
+                    border: 1px solid transparent;
+                    border-bottom: none;
+                    border-top: none;
+                    &:hover{
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-bottom: none;
+                        border-top: none;
+                    }
+                    .myjdlist{
+                        margin-left: -6px;
+                        width: 280px;
+                        padding: 0 10px;
+                        background-color: white;
+                        overflow: hidden;
+                        display: none;
+                        border-width: 0 1px  1px 1px;
+                        border-style: solid;
+                        border-color: #ccc;
+                        
+                        >ul{
+                           
+                            overflow: hidden;
+                            width: 100%;
+                            list-style: none;
+                            padding: 10px;
+                            >li{
+                                cursor: pointer;
+                                width: 125px;
+                                height: 24px;
+                                line-height: 24px;
+                                text-align: left;
+                                float: left;
+                                color: #999999;
+                                cursor: pointer;
+                                &:hover{
+                                    color: #C81623;
+                                }
+                            }
+                        }
+
+                        >ul:nth-of-type(1){
+                            
+                            border-bottom: 1px solid #ccc;
+                        }
+
+                    }
+                
+                    &:hover div{
+                        display: block;
+                    }
+                  
+                }
+
+                &:nth-of-type(5){
+                    border: 1px solid transparent;
+                    border-bottom: none;
+                    border-top: none;
+                    &:hover{
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-bottom: none;
+                        border-top: none;
+                    }
+                    >.myjdlist_qycg{
+                        background-color: white;
+                        border-width: 0 1px  1px 1px;
+                        border-style: solid;
+                        border-color: #ccc;
+                        width: 157px;
+                        padding: 10px 0 10px 15px;
+                        overflow: hidden;
+                        margin-left: -6px;
+                        display: none;
+                        ul{
+                            width: 100%;
+                            list-style: none;
+                            li{
+                                cursor: pointer;
+                                width: 60px;
+                                height: 24px;
+                                line-height: 24px;
+                                float: left;
+                                color: #999999;
+                                cursor: pointer;
+                                &:last-child{
+                                    width: 112px;
+                                }
+                                &:hover{
+                                    color: #C81623;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover div{
+                        display: block;
+                    }
+                }
+
+                &:nth-of-type(6){
+                    border: 1px solid transparent;
+                    border-bottom: none;
+                    border-top: none;
+                    &:hover{
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-bottom: none;
+                        border-top: none;
+                    }
+                    >.myjdlist_khfw{
+                        position: absolute;
+                        background-color: white;
+                        border-width: 0 1px  1px 1px;
+                        border-style: solid;
+                        border-color: #ccc;
+                        left:-84px ;
+                        width: 170px;
+                        display: none;
+                        padding-bottom: 5px;
+                        ul{
+                            width: 100%;
+                            list-style: none;
+                            padding-left: 15px;
+                            
+                            span{
+                                text-align: left;
+                                font-weight: bold;
+                                float: left;
+                                width: 100%;
+                                height: 24px;
+                                line-height: 24px;
+                            }
+                            li{
+                                color: #999999;
+                                float: left;
+                                text-align: left;
+                                width: 80px;
+                                height: 24px;
+                                line-height: 24px;
+                                cursor: pointer;
+                                &:hover{
+                                    color: #C81623;
+                                }
+                            }
+                        }
+                    }
+                    
+                    &:hover div{
+                        display: block;
+                    }
+                }
+
+                &:nth-of-type(7){
+                    border: 1px solid transparent;
+                    border-bottom: none;
+                    border-top: none;
+                    &:hover{
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-bottom: none;
+                        border-top: none;
+                    }
+                    >.myjdlist_wzdh{                
+                        position: absolute;
+                        text-align: left;
+                        display: none;
+                        left: -1031px;
+                        top: 30px;
+                        width: 1188px;
+                        padding: 15px 0;
+                        background-color: white;
+                        border-width: 0 1px  1px 1px;
+                        border-style: solid;
+                        border-color: #ccc;
+                        
+                        dl{
+                            float: left;
+                        }
+        
+                        li{
+                            cursor: pointer;
+                           list-style: none;
+                           &:hover{
+                            color: #C81623;
+                        }
+                       }
+        
+                       .theme{
+                           width: 330px;
+                           height: 160px;
+                           padding-left:20px ;
+                           border-right: 1px solid #ccc;
+                           
+                           dt{
+                            font-weight: bold;
+                            margin-bottom: 5px;                   
+                           }
+                           dd{
+                               color: #999;
+                            ul{
+                                li{
+                                  width: 75px;
+                                  height: 24px;
+                                  line-height: 24px;
+                                  float: left;
+                                }
+                            }
+                        }
+                          
+        
+                       }
+        
+                       .channel{
+                           width: 256px;
+                           padding-left: 20px;
+                           border-right: 1px solid #ccc;
+                           
+                           dt{
+                            font-weight: bold;
+                            margin-bottom: 5px;                   
+                           }
+                           dd{
+                               color: #999;
+                            ul{
+                                li{
+                                  width: 85px;
+                                  height: 24px;
+                                  line-height: 24px;
+                                  float: left;
+                                }
+                            }
+                        }
+                       }
+        
+                       .service{
+                        width: 256px;
+                        padding-left: 20px;
+                        border-right: 1px solid #ccc;
+                       
+                        dt{
+                         font-weight: bold;
+                         margin-bottom: 5px;                   
+                        }
+                        dd{
+                            color: #999;
+                         ul{
+                             li{
+                               width: 85px;
+                               height: 24px;
+                               line-height: 24px;
+                               float: left;
+                             }
+                         }
+                     }
+                       }
+        
+                       .more{
+                        width: 256px;
+                        padding-left: 20px;
+                       
+                        dt{
+                         font-weight: bold;
+                         margin-bottom: 5px;                   
+                        }
+                        dd{
+                            color: #999;
+                         ul{
+                             li{
+                               width: 85px;
+                               height: 24px;
+                               line-height: 24px;
+                               float: left;
+                             }
+                         }
+                     }
+                       }
+                    }
+                }
+
+                &:nth-of-type(7):hover div{
+                    display: block;
+                }
+
+                &:nth-of-type(8){
+                    >.myjdlist_sjjd{
+                        border: 1px solid #ccc;
+                        width: 200px;
+                        position: absolute;
+                        left: -129px;
+                        overflow: hidden;
+                        display: none;
+                        >div{
+                            padding: 15px 0 15px 5px;
+                            height: 70px;
+                            background-color: white;
+                            font-size: 12px;
+                            border-bottom: 1px solid #ccc;
+
+                            >img{
+                                border: 1px solid #ccc;
+                                padding: 2px;
+                                float: left;
+                                width: 70px;
+                                height: 70px;
+                            }
+
+                            >div{
+                                padding-left: 5px;
+                                padding-top: 2px;
+                                float: left;
+                                text-align: left;
+                                p{
+                                    &:nth-of-type(1){
+                                        
+                                        font-weight: bold;
+                                        height: 16px;
+                                        line-height: 16px;
+                                    }
+
+                                    &:nth-of-type(2){
+                                        height: 14px;
+                                        
+                                        margin-top: 2px;
+                                        line-height: 14px;
+                                    }
+                                }
+
+                                &:nth-of-type(2){
+                                    p{
+                                        color: black;
+                                    }
+                                }
+
+                                .img1{
+                                    margin-top: 5px;
+                                    width: 90px;
+                                }
+                               .img2{
+                                margin-top: 5px;
+                                width: 50px;
+                               }
+
+                            }
+
+                            
+
+
+                        }
+                    }
+                }
+
+                &:nth-of-type(8):hover>div{
+                    display: block;
+                }
+                
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                    width: 1px;
+                    height: 10px;
+                    display: block;
+                    background-color:#ccc;
+                }
+               
+                &:nth-of-type(8)::after{
+                    display: none;
+                }
+
+                a{
+                    height: 30px;
+                }
+
+
+                >a:hover{
+                    color: red;
+                }
+
+               
+                
+            }
+
+                
+           >.dropdown {
+                width: 77px;
+             
+                &:hover{
+                    background-color: white;
+                }
+            }
+
+
+            
+        }
+    }
+
+    
+}

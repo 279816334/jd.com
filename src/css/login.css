@@ -1,0 +1,417 @@
+@charset "utf-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+header > .container {
+  position: relative;
+  overflow: hidden;
+  width: 990px;
+  padding-top: 10px;
+}
+header > .container > img {
+  cursor: pointer;
+  float: left;
+  width: 170px;
+  height: 60px;
+}
+header > .container > span {
+  float: left;
+  color: #666;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+header > .container > span:first-child {
+  height: 20px;
+  margin-top: 10px;
+}
+header > .container > div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 17px;
+  line-height: 17px;
+}
+header > .container > div span {
+  float: left;
+}
+header > .container > div span:nth-of-type(1) {
+  color: #df0000;
+  font-size: 20px;
+}
+header > .container > div span:nth-of-type(2) {
+  margin-left: 3px;
+  font-size: 12px;
+  color: #999;
+}
+header > .container > div span:nth-of-type(2):hover {
+  cursor: pointer;
+  color: #b61d1d;
+  text-decoration: underline;
+}
+#anquan {
+  width: 100%;
+  height: 40px;
+  background-color: #fff8f0;
+}
+#anquan > .container {
+  width: 990px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #999;
+}
+#anquan > .container span {
+  float: left;
+  margin-left: 10px;
+}
+#anquan > .container span:first-child {
+  margin-left: 95px;
+}
+#error {
+  position: absolute;
+  z-index: 999;
+  width: 286px;
+  line-height: 23px;
+  background-color: rgba(255, 0, 0, 0.1);
+  height: 23px;
+  font-size: 12px;
+  padding-left: 20px;
+  right: 292px;
+  color: #999;
+  top: 230px;
+  display: none;
+}
+main {
+  width: 100%;
+  background-color: #2ab2ba;
+  overflow: hidden;
+}
+main > .container {
+  position: relative;
+  overflow: hidden;
+  width: 990px;
+  height: 475px;
+  background-image: url('../img/login/login.jpg');
+}
+main > .container > .main {
+  margin-top: 10px;
+  float: right;
+  width: 350px;
+  height: 430px;
+  background-color: white;
+}
+main > .container > .main > div > .tips {
+  width: 100%;
+  height: 38px;
+  padding: 10px;
+  background-color: #fff8f0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ccc;
+}
+main > .container > .main > div > .tips > span {
+  float: left;
+  margin-right: 5px;
+}
+main > .container > .main > div > .tips > span:first-child {
+  margin-left: 25px;
+}
+main > .container > .main > div > .choice {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(107, 106, 106, 0.1);
+}
+main > .container > .main > div > .choice::after {
+  content: "";
+  display: block;
+  height: 22px;
+  width: 1px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  top: 18px;
+}
+main > .container > .main > div > .choice > span {
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+  float: left;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  width: 173px;
+}
+main > .container > .main > div > .choice > span:hover {
+  color: #e4393c;
+  font-weight: bold;
+}
+main > .container > .main > div > .main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(107, 106, 106, 0.1);
+}
+main > .container > .main > div > .main > .img {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+main > .container > .main > div > .main > .img > img {
+  margin-top: 20px;
+}
+main > .container > .main > div > .main > .img > img:first-child {
+  width: 133px;
+  height: 133px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+main > .container > .main > div > .main > .img > img:last-child {
+  position: absolute;
+  width: 155px;
+  height: 160px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+main > .container > .main > div > .main > .main1 {
+  width: 100%;
+  text-align: center;
+  height: 18px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+main > .container > .main > div > .main > .main1 span:nth-of-type(2) {
+  margin-left: 10px;
+}
+main > .container > .main > div > .main > .main1 a {
+  color: red;
+}
+main > .container > .main > div > .main > .main2 {
+  margin-top: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+main > .container > .main > div > .main > .main2 > ul {
+  padding-left: 30px;
+  width: 100%;
+  list-style: none;
+}
+main > .container > .main > div > .main > .main2 > ul li {
+  float: left;
+  margin-right: 22px;
+  width: 68px;
+  height: 25px;
+  line-height: 25px;
+}
+main > .container > .main > div > .main > .main2 > ul li span {
+  color: #ccc;
+  float: left;
+  font-size: 12px;
+}
+main > .container > .main > div > .main > .main2 > ul li span:first-child {
+  font-size: 20px;
+  margin-right: 5px;
+}
+main > .container > .main > div > .main > .main2 > ul li:nth-of-type(2) {
+  width: 60px;
+}
+main > .container > .main > div > .main > .main2 > ul li:first-child span:first-child {
+  font-size: 18px;
+  margin-right: 5px;
+}
+main > .container > .main > div > .main1 {
+  width: 300px;
+  height: 191px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(107, 106, 106, 0.1);
+}
+main > .container > .main > div > .main1 > div {
+  margin-left: 0;
+  width: 304px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  position: relative;
+}
+main > .container > .main > div > .main1 > div .clear {
+  display: none;
+  right: 0;
+  width: 20px;
+  height: 30px;
+  margin-top: 5px;
+  line-height: 30px;
+  top: 0;
+  background-color: white;
+  position: absolute;
+}
+main > .container > .main > div > .main1 > div .clear1 {
+  display: none;
+  right: 0;
+  width: 20px;
+  height: 30px;
+  margin-top: 5px;
+  line-height: 30px;
+  top: 0;
+  background-color: white;
+  position: absolute;
+}
+main > .container > .main > div > .main1 > div span {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  height: 38px;
+  line-height: 36px;
+  text-align: center;
+  width: 38px;
+  font-size: 14px;
+  color: #666;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main > .container > .main > div > .main1 > div input {
+  height: 26px;
+  border: none;
+  outline: none;
+}
+main > .container > .main > div > .main1 > span {
+  width: 100%;
+  font-size: 12px;
+}
+main > .container > .main > div > .main1 > span:nth-of-type(1) {
+  text-align: right;
+  padding-top: 20px;
+  cursor: pointer;
+}
+main > .container > .main > div > .main1 > span:nth-of-type(1):hover {
+  color: #b61d1d;
+  text-decoration: underline;
+}
+main > .container > .main > div > .main1 > span:nth-of-type(2) {
+  height: 34px;
+  margin-top: 14px;
+  line-height: 34px;
+  text-align: center;
+  background-color: red;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+main > .container > .main > div > .bottom {
+  padding: 0 20px;
+}
+main > .container > .main > div > .bottom > div {
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+main > .container > .main > div > .bottom > div span {
+  float: left;
+  margin-right: 5px;
+  font-size: 20px;
+}
+main > .container > .main > div > .bottom > div:first-child span {
+  font-size: 22px;
+  color: #26b4b4;
+}
+main > .container > .main > div > .bottom > div:nth-of-type(2) span {
+  font-size: 22px;
+  color: #39be1f;
+}
+main > .container > .main > div > .bottom > div:last-child {
+  position: relative;
+  float: right;
+  width: 90px;
+  margin-right: 10px;
+  text-align: right;
+  font-size: 12px;
+}
+main > .container > .main > div > .bottom > div:last-child span {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: white;
+  margin-top: 15px;
+  border-radius: 50%;
+  margin-left: 15px;
+  text-align: center;
+  background-color: #b61d1d;
+}
+main > .container > .main > div > .bottom > div:last-child a {
+  color: #b61d1d;
+}
+main > .container > .main > div > .bottom > div a {
+  float: left;
+  font-size: 12px;
+}
+main > .container > .main > div > .bottom > div a:hover {
+  color: #b61d1d;
+  text-decoration: underline;
+}
+#tabs2 {
+  display: none;
+}
+footer {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 20px;
+}
+footer > .container {
+  display: flex;
+  flex-direction: column;
+  width: 990px;
+  height: 85px;
+  font-size: 12px;
+}
+footer > .container ul {
+  list-style: none;
+}
+footer > .container ul li {
+  float: left;
+  width: 78px;
+  position: relative;
+  cursor: pointer;
+}
+footer > .container ul li::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 17px;
+  right: 12px;
+  top: 0;
+  background-color: #ccc;
+}
+footer > .container ul li:last-child::after {
+  display: none;
+}
+footer > .container ul li:hover {
+  color: #b61d1d;
+  text-decoration: underline;
+}
+footer > .container span {
+  margin-top: 10px;
+}

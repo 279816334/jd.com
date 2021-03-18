@@ -1,0 +1,178 @@
+@charset 'utf-8';
+#top2 {
+  width: 100%;
+  height: 140px;
+  background-color: white;
+}
+#top2 .container {
+  width: 1190px;
+  overflow: hidden;
+}
+#top2 .container .left {
+  float: left;
+}
+#top2 .container .left img {
+  margin-top: 10px;
+  width: 140px;
+  height: 120px;
+}
+#top2 .container .center {
+  float: left;
+  margin-left: 50px;
+  width: 770px;
+  height: 110px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+#top2 .container .center .search {
+  width: 550px;
+  height: 37px;
+  border: 2px solid #C81623;
+  padding: 1px 0 1px 17px ;
+  box-sizing: border-box;
+  background-color: white;
+}
+#top2 .container .center .search input {
+  float: left;
+  border: none;
+  margin-top: 3px;
+  width: 425px;
+  height: 26px;
+  outline: none;
+}
+#top2 .container .center .search input::placeholder {
+  color: #999;
+}
+#top2 .container .center .search span {
+  text-align: center;
+  cursor: pointer;
+  line-height: 32px;
+}
+#top2 .container .center .search span:nth-of-type(1) {
+  font-size: 14px;
+  margin-left: 15px;
+  line-height: 32px;
+}
+#top2 .container .center .search span:nth-of-type(1):hover {
+  color: #C81623;
+}
+#top2 .container .center .search span:nth-of-type(2) {
+  float: right;
+  margin-right: 0;
+  width: 58px;
+  height: 34px;
+  margin-top: -1px;
+  display: block;
+  background-color: #ee3642;
+  color: white;
+  transition: 0.3s;
+  font-weight: bold;
+}
+#top2 .container .center .search span:nth-of-type(2):hover {
+  background-color: #C81623;
+}
+#top2 .container .center .hotwords {
+  font-size: 12px;
+  width: 550px;
+}
+#top2 .container .center .hotwords ul {
+  width: 100%;
+}
+#top2 .container .center .hotwords ul li:hover {
+  color: #C81623;
+}
+#top2 .container .center .hotwords ul li {
+  height: 20px;
+  text-align: center;
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#top2 .container .center .hotwords ul li:first-child {
+  width: 60px;
+  color: red;
+}
+#top2 .container .center .hotwords ul li:nth-of-type(n+2) {
+  width: 48px;
+}
+#top2 .container .center .hotwords ul li:nth-of-type(7) {
+  width: 40px;
+}
+#top2 .container .center .navitems {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+}
+#top2 .container .center .navitems ul {
+  list-style: none;
+}
+#top2 .container .center .navitems ul li:hover {
+  color: #C81623;
+}
+#top2 .container .center .navitems ul li {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin: 0 8px;
+  cursor: pointer;
+}
+#top2 .container .center .navitems ul li:nth-of-type(2) {
+  width: 50px;
+  font-weight: bold;
+  color: red;
+}
+#top2 .container .center .navitems ul li:first-child {
+  color: red;
+  font-weight: bold;
+  margin-left: 14px;
+}
+#top2 .container .center .navitems ul > .tow {
+  width: 30px;
+}
+#top2 .container .center .navitems ul > .four {
+  width: 70px;
+}
+#top2 .container .center .shopping {
+  cursor: pointer;
+  width: 132px;
+  height: 34px;
+  line-height: 34px;
+  background-color: white;
+  position: absolute;
+  right: -40px;
+  top: 34px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  text-align: center;
+}
+#top2 .container .center .shopping .span1 {
+  float: left;
+  margin-left: 20px;
+}
+#top2 .container .center .shopping:hover {
+  border-color: #C81623;
+}
+#top2 .container .center .shopping div {
+  width: 18px;
+  height: 14px;
+  top: 2px;
+  line-height: 14px;
+  border-radius: 6px;
+  color: white;
+  left: 30px;
+  background-color: red;
+  position: absolute;
+}
+#top2 .container .right {
+  float: right;
+}
+#top2 .container .right img {
+  padding: 5px;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+}
