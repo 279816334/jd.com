@@ -51,12 +51,13 @@
                 width: 100%;
                 height: 285px;
                 >.tab{
+                    position: relative;
                     >.tab_head{
                         width: 265px;
                         height: 20px;
                         line-height: 20px;
                         position: absolute;
-                        top: 20px;
+                        top: -40px;
                         right: 0;
                         >div{
                             width: 30px;
@@ -72,21 +73,26 @@
                                 color: #c81623;
                             }
                             
-                            &::after{
-                                content: "";
-                                width: 100%;
-                                position: absolute;
-                                display: block;
-                                width: 28px;
-                                height: 2px;
-                                background-color: #c81623;                            }
+                            // &::after{
+                            //     content: "";
+                            //     width: 100%;
+                            //     position: absolute;
+                            //     display: block;
+                            //     width: 28px;
+                            //     height: 2px;
+                            //     background-color: #c81623;
+                            // }
                         }
                     }
 
                     >.tab_body{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
                         width: 560px;
                         height: 270px;
                         padding: 0 15px 15px 15px;
+                        display: none;
                         >.specia_list{
                             width: 100%;   
                             height: 100%;
@@ -329,13 +335,24 @@
                         top: -40px;
                         width: 270px;
                         height: 312px;
-
                         >a{
                             width: 135px;
                             height: 72px;
                             padding: 14px 0;
                             text-align: center;
                             float: left;
+                            position: relative;
+                            &:nth-of-type(odd)::after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: 1px;
+                                height: 60px;
+                                background-image: linear-gradient(180deg,white,#eeeeee,#eeeeee,white);
+                                top: 30px;
+                                right: 0;
+                                
+                            }
                             >div{
                                 transition: .3s;
                                 >img{

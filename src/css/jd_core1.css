@@ -51,12 +51,15 @@
   width: 100%;
   height: 285px;
 }
+#jd_core1 > .container > .J_special_offer > .box_bd > .tab {
+  position: relative;
+}
 #jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_head {
   width: 265px;
   height: 20px;
   line-height: 20px;
   position: absolute;
-  top: 20px;
+  top: -40px;
   right: 0;
 }
 #jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_head > div {
@@ -73,19 +76,14 @@
 #jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_head > div:hover {
   color: #c81623;
 }
-#jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_head > div::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  display: block;
-  width: 28px;
-  height: 2px;
-  background-color: #c81623;
-}
 #jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_body {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 560px;
   height: 270px;
   padding: 0 15px 15px 15px;
+  display: none;
 }
 #jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_body > .specia_list {
   width: 100%;
@@ -316,6 +314,17 @@
   padding: 14px 0;
   text-align: center;
   float: left;
+  position: relative;
+}
+#jd_core1 > .container > .J_lightning_buy > .box_bd > .flash_buying > .right > a:nth-of-type(odd)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  background-image: linear-gradient(180deg, white, #eeeeee, #eeeeee, white);
+  top: 30px;
+  right: 0;
 }
 #jd_core1 > .container > .J_lightning_buy > .box_bd > .flash_buying > .right > a > div {
   transition: 0.3s;
