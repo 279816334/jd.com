@@ -66,11 +66,15 @@
   width: 200px;
   height: 260px;
   float: left;
+  cursor: pointer;
 }
 #jd_seckill > .container > .center .swiper-slide > div img {
   width: 140px;
   height: 140px;
   margin: 30px 30px 0 30px;
+}
+#jd_seckill > .container > .center .swiper-slide > div img:hover {
+  opacity: 0.8;
 }
 #jd_seckill > .container > .center .swiper-slide > div h6 {
   display: inline-block;
@@ -137,10 +141,98 @@
   margin-left: -6px;
   text-decoration: line-through;
 }
+#jd_seckill > .container > .center > .swiper-container2 {
+  position: relative;
+}
+#jd_seckill > .container > .center > .swiper-container2 .swiper-button-prev,
+#jd_seckill > .container > .center > .swiper-container2 .swiper-button-next {
+  position: absolute;
+  width: 25px;
+  height: 35px;
+  outline: none;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: none;
+  transition: 0.3s;
+}
+#jd_seckill > .container > .center > .swiper-container2 .swiper-button-prev:hover,
+#jd_seckill > .container > .center > .swiper-container2 .swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#jd_seckill > .container > .center > .swiper-container2 .swiper-button-prev {
+  border-radius: 0 18px 18px 0;
+}
+#jd_seckill > .container > .center > .swiper-container2 .swiper-button-next {
+  border-radius: 18px  0 0 18px;
+}
 #jd_seckill > .container > .right {
   float: left;
   width: 180px;
   padding: 10px;
   height: 240px;
+  overflow: hidden;
   background-color: white;
+}
+#jd_seckill > .container > .right > .swiper-container3 {
+  background-image: linear-gradient(to top, rgba(73, 111, 124, 0.1) 20%, white 60%);
+}
+#jd_seckill > .container > .right img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 20px 30px 0;
+}
+#jd_seckill > .container > .right .bottom {
+  height: 90px;
+  margin-top: 10px;
+  text-align: center;
+}
+#jd_seckill > .container > .right .bottom p {
+  font-size: 14px;
+}
+#jd_seckill > .container > .right .bottom p:first-of-type {
+  color: #666;
+}
+#jd_seckill > .container > .right .bottom p:last-of-type {
+  font-weight: 700;
+  color: #333;
+}
+#jd_seckill > .container > .right .bottom div {
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 14px;
+  width: 82px;
+  height: 24px;
+  line-height: 22px;
+  padding-left: 4px ;
+  border: 1px solid #e1251b;
+  font-weight: 700;
+  font-size: 12px;
+  color: #e1251b;
+  cursor: pointer;
+}
+#jd_seckill > .container > .right .bottom div:hover {
+  background-color: #e1251b;
+}
+#jd_seckill > .container > .right .bottom div:hover span {
+  color: white;
+}
+#jd_seckill > .container > .right .swiper-container3 {
+  position: relative;
+}
+#jd_seckill > .container > .right .swiper-pagination {
+  left: 0;
+  bottom: 16px;
+  float: left;
+  position: absolute;
+  color: #c81623;
+  width: 100%;
+  height: 8px;
+}
+#jd_seckill > .container > .right .swiper-pagination span {
+  width: 4px;
+  height: 4px;
+  margin-right: 1px;
 }
