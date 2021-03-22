@@ -60,13 +60,22 @@
                 height: 260px;
                 overflow: hidden;
                 padding: 0 20px;
+                // .swiper-wrapper{
+                //     width: 100%;
+                // }
                 .swiper-slide{
-                    height: 260px;
+
+                    &:nth-of-type(odd){
+                        margin: 50px 50px 0  0;
+                    }
+                    &:nth-of-type(odd){
+                        margin: 20px 50px 0  0;
+                    }
                    div{
                     float: left;
-                    width:150px ;
-                    height: 210px;
-                    margin: 20px 36px 0 0;
+                    width:150px ; 
+                    height: 150px;
+                    margin: 10px 0;
                     &:first-of-type{
                         margin-left: 20px;
                     }
@@ -87,23 +96,6 @@
                 }
 
 
-                .scroll_bottom{
-                    height: 3px;
-                    width: 96%;
-                    left: 2%;
-                    position: absolute;
-                    background-color: rgba(0,0,0,0.1);
-                    bottom: 5px;
-                    z-index: 999;
-                    div{
-                        width: 99px;
-                        height: 9px;
-                        position: absolute;
-                        top: -3px;
-                        background-color: #D8D8D8;
-                        border-radius: 4px;
-                    }
-                }
             }
             
         }

@@ -6,7 +6,8 @@
 body,
 html {
   width: 100%;
-  height: 2000px;
+  height: auto;
+  background-color: #f4f4f4;
 }
 a {
   text-decoration: none;
@@ -19,7 +20,7 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 #top1 > .container {
-  width: 990px;
+  width: 1210px;
   position: relative;
   font-size: 12px;
 }
@@ -34,7 +35,7 @@ a {
 #top1 > .container > ul {
   margin-right: 0;
   list-style: none;
-  width: 722px;
+  width: 720px;
 }
 #top1 > .container > ul::after {
   content: '';
@@ -55,117 +56,8 @@ a {
   z-index: 999;
 }
 #top1 > .container > ul > li:nth-of-type(1) {
-  width: 132px;
+  width: 133px;
   margin-left: 5px;
-  border: 1px solid transparent;
-  border-bottom: none;
-  border-top: none;
-}
-#top1 > .container > ul > li:nth-of-type(1):hover {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-bottom: none;
-  border-top: none;
-}
-#top1 > .container > ul > li:nth-of-type(1):hover .myjdlist_user {
-  display: block;
-}
-#top1 > .container > ul > li:nth-of-type(1) > span {
-  float: left;
-  margin-left: 5px;
-}
-#top1 > .container > ul > li:nth-of-type(1) > img {
-  width: 38px;
-  height: 16px;
-  background: url("../img/shoppingCart/PLUS.png") left;
-  margin-top: 6px;
-  float: left;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user {
-  margin-top: 30px;
-  margin-left: -6px;
-  position: absolute;
-  width: 280px;
-  height: auto;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-top: none;
-  display: none;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .top {
-  overflow: hidden;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ccc;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .top > img {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 15px;
-  cursor: pointer;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .top > div > div {
-  width: 205px;
-  float: left;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .top > div > div img {
-  float: left;
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 80px;
-  height: 16px;
-  background: url("../img/shoppingCart/PLUS.png") left -34px;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .top > div > div span {
-  float: right;
-  margin-right: 10px;
-  color: #999;
-  margin-top: 3px;
-  cursor: pointer;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .top > div > div span:hover {
-  color: #C81623;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .top > div > p {
-  float: left;
-  color: #999;
-  margin-left: 10px;
-  margin-top: -5px;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .bottom {
-  width: 100%;
-  height: 88px;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .bottom > span {
-  font-size: 24px;
-  margin-top: 34px;
-  line-height: 24px;
-  color: #999;
-  float: left;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .bottom > span:first-of-type {
-  margin-left: 5px;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .bottom > span:last-of-type {
-  float: right;
-  margin-right: 5px;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .bottom > div {
-  float: left;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .bottom > div > ul {
-  width: 222px;
-  height: 100%;
-  height: auto;
-  list-style: none;
-}
-#top1 > .container > ul > li:nth-of-type(1) > .myjdlist_user > .bottom > div > ul > li {
-  float: left;
-  width: 74px;
-  height: 100%;
 }
 #top1 > .container > ul > li:nth-of-type(2),
 #top1 > .container > ul > li:nth-of-type(4),
@@ -326,9 +218,9 @@ a {
   position: absolute;
   text-align: left;
   display: none;
-  left: -835px;
+  left: -1031px;
   top: 30px;
-  width: 988px;
+  width: 1188px;
   padding: 15px 0;
   background-color: white;
   border-width: 0 1px  1px 1px;
@@ -346,7 +238,7 @@ a {
   color: #C81623;
 }
 #top1 > .container > ul > li:nth-of-type(7) > .myjdlist_wzdh .theme {
-  width: 300px;
+  width: 330px;
   height: 160px;
   padding-left: 20px ;
   border-right: 1px solid #ccc;
@@ -359,13 +251,13 @@ a {
   color: #999;
 }
 #top1 > .container > ul > li:nth-of-type(7) > .myjdlist_wzdh .theme dd ul li {
-  width: 100px;
+  width: 75px;
   height: 24px;
   line-height: 24px;
   float: left;
 }
 #top1 > .container > ul > li:nth-of-type(7) > .myjdlist_wzdh .channel {
-  width: 201px;
+  width: 256px;
   padding-left: 20px;
   border-right: 1px solid #ccc;
 }
@@ -383,7 +275,7 @@ a {
   float: left;
 }
 #top1 > .container > ul > li:nth-of-type(7) > .myjdlist_wzdh .service {
-  width: 201px;
+  width: 256px;
   padding-left: 20px;
   border-right: 1px solid #ccc;
 }
@@ -401,7 +293,7 @@ a {
   float: left;
 }
 #top1 > .container > ul > li:nth-of-type(7) > .myjdlist_wzdh .more {
-  width: 201px;
+  width: 256px;
   padding-left: 20px;
 }
 #top1 > .container > ul > li:nth-of-type(7) > .myjdlist_wzdh .more dt {
@@ -497,48 +389,121 @@ a {
 #top1 > .container > ul > .dropdown:hover {
   background-color: white;
 }
-#search {
+#top2 {
+  width: 100%;
   overflow: hidden;
+  background-color: white;
 }
-#search .container {
-  width: 990px;
-  height: auto;
+#top2 .container {
+  width: 1210px;
   height: 100px;
+  position: relative;
 }
-#search .container > .left {
+#top2 .container .logo {
+  width: 326px;
+  height: 60px;
+  line-height: 60px;
+  padding: 20px 0;
   float: left;
+  background: url("../img/detalis/logo.png") left 25px no-repeat;
 }
-#search .container > .left img {
-  width: 134px;
-  height: 42px;
-  margin-top: 28px;
-}
-#search .container > .cart_search {
+#top2 .container .logo a {
   float: right;
-  border: 2px solid #c91623;
-  background: #c91623;
-  height: 24px;
-  margin-top: 30px;
-  overflow: hidden;
+  display: block;
+  border: 1px solid #ccc;
+  width: 70px;
+  padding-left: 5px;
+  font-size: 12px;
+  margin-top: 17px;
+  margin-right: 70px;
+  height: 27px;
+  line-height: 27px;
 }
-#search .container > .cart_search input[type=text] {
-  border: 0;
-  height: 18px;
-  line-height: 18px;
-  width: 260px;
-  padding: 3px 5px;
-  outline: none;
+#top2 .container .search {
+  float: left;
+  width: 560px;
+  height: 40px;
+  margin-top: 25px;
+  line-height: 40px;
+  margin-left: 30px;
 }
-#search .container > .cart_search input[type=button] {
-  vertical-align: top;
-  display: inline-block;
-  width: 48px;
-  height: 24px;
-  cursor: pointer;
-  background: #c91623;
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
+#top2 .container .search input {
+  float: left;
   outline: none;
+  width: 446px;
+  border: 2px solid #C81623;
+  height: 24px;
+  padding: 4px;
+}
+#top2 .container .search button {
+  float: left;
+  font-size: 12px;
+  width: 50px;
+  height: 36px;
   border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+#top2 .container .search button:first-of-type {
+  background-color: #B61D1D;
+}
+#top2 .container .search button:last-of-type {
+  background-color: #474e5c;
+}
+#top2 .container .my_shop {
+  float: right;
+  width: 140px;
+  height: 36px;
+  margin: 25px 65px 0 0 ;
+  position: relative;
+}
+#top2 .container .my_shop > div {
+  font-size: 12px;
+  text-align: center;
+  width: 75px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 28px 0 36px;
+  border: 1px solid #ccc;
+  background-color: #F9F9F9;
+}
+#top2 .container .my_shop > div span {
+  font-size: 14px;
+  position: absolute;
+}
+#top2 .container .my_shop > div span:first-of-type {
+  left: 20px;
+  color: red;
+}
+#top2 .container .my_shop > div span:nth-of-type(2) {
+  right: 10px;
+  font-size: 12px;
+}
+#top2 .container .my_shop > div span:last-of-type {
+  right: 25px;
+  top: -3px;
+  display: block;
+  width: 14px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  color: white;
+  border-radius: 5px;
+  background-color: #C81623;
+}
+#top2 .container .hotwords {
+  position: absolute;
+  width: 518px;
+  height: 20px;
+  margin-left: 355px;
+  margin-top: 65px;
+  font-size: 12px;
+}
+#top2 .container .hotwords a {
+  margin-right: 10px;
+}
+#top2 .container .hotwords a:hover {
+  color: #C81623;
 }

@@ -1,6 +1,7 @@
 import $ from '../library/jquery.js';
 import Swiper from '../library/swiper.js';
 
+
 $(function () {
     // banner 轮播图
     let mySwiper = new Swiper('.swiper-container', {
@@ -46,7 +47,7 @@ $(function () {
     }
 
     // right1 轮播图
-    var mySwiper1 = new Swiper('.swiper-container1', {
+    let mySwiper1 = new Swiper('.swiper-container1', {
         autoplay: {
             delay: 5000,
             stopOnLastSlide: false,
@@ -70,7 +71,7 @@ $(function () {
     // ============================================================================
     // jd_seckill center 轮播图
     // center
-    var mySwiper2 = new Swiper('.swiper-container2', {
+    let mySwiper2 = new Swiper('.swiper-container2', {
         // autoplay: true,//可选选项，自动滑动
         navigation: {
             nextEl: '._prev2_2',
@@ -82,7 +83,7 @@ $(function () {
     })
 
     // right
-    var mySwiper3 = new Swiper('.swiper-container3', {
+    let mySwiper3 = new Swiper('.swiper-container3', {
         autoplay: {
             delay: 1000,
             stopOnLastSlide: false,
@@ -127,29 +128,58 @@ $(function () {
     // //     scroll_bottom.children().css('left', scr_left)
     // //     console.log($('.swiper-container4').children('.swiper-wrapper').css('left'));
     // // }, 15);
-    var mySwiper4 = new Swiper('.swiper-container4', {
+    let mySwiper4 = new Swiper('.swiper-container4', {
+        // autoplay: true,
         autoplay: {
-            delay: 0,
+            delay: 10,
             stopOnLastSlide: false,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
         },
-        speed: 6000,
+        speed: 3000,
+        slidesPerView: 5,
         allowTouchMove: false,
-        freeMode: true,
         scrollbar: {
             el: '.swiper-scrollbar',
             draggable: true,
             snapOnRelease: false,
         },
     })
+
+    let timer = null;
+    mySwiper4.el.onmouseover = function () {
+        // clearInterval(timer);
+        mySwiper4.init = false;
+        // timer = setInterval(function () {
+        mySwiper4.autoplay.stop();
+        // }, 500)
+    }
+
+    //鼠标离开开始自动切换
+    mySwiper4.el.onmouseout = function () {
+        // clearInterval(timer);
+        // timer = setInterval(function () {
+        mySwiper4.autoplay.start();
+        // }, 500)
+
+    }
+
+    Array.from(mySwiper4.slides).forEach((elm, i) => {
+        if (!(i % 2)) {
+            elm.style.margin = '20px 0 0  0';
+        } else {
+            elm.style.margin = '50px 0 0  0';
+        }
+        elm.style.height = '200px'
+    })
     mySwiper4.scrollbar.$el.css({
         'height': '3px',
         'margin-bottom': '5px',
-        'opacity': '0'
+        'opacity': '1'
     })
     mySwiper4.scrollbar.$dragEl.css({
         'transform': 'translate3d(0px, 0px, 0px)',
         'height': '9px',
+        // 'width': '15px',
         'background': 'red',
         'margin': 0,
         'margin-top': '-3px',
@@ -169,6 +199,51 @@ $(function () {
 
         },
     });
+    // let b = {
+    //     img: ['../img/J_feeds/goods1_img1.jpg',
+    //         '../img/J_feeds/goods1_img1_1.jpg',
+    //         '../img/J_feeds/goods1_img2.jpg',
+    //         '../img/J_feeds/goods1_img2_1.jpg',
+    //         '../img/J_feeds/goods1_img3.jpg',
+    //         '../img/J_feeds/goods1_img3_1.jpg',
+    //         '../img/J_feeds/goods1_introduce.jpg'
+    //     ]
+    // }
+    // $('.feed_goods_img').children('img').prop('src', b.img[0])
+    $.ajax({
+        url: '../../interface/index_goods.php',
+        type: 'get',
+        dataType: 'json',
+        success (res) {
+            let temp = '';
+            res.forEach((elm, i) => {
+                temp += `   
+                <li class="feed_goods">
+                <a href="./details.html?id=${elm.id}">
+                    <div class="feed_goods_img">
+                        <img src="${JSON.parse(elm.goods_img)[0].src}" alt="">
+                    </div>
+                    <div class="feed_goods_title">
+                        <p>${(elm.goods_title).slice(0, 25)}...</p>
+                    </div>
+                    <div class="feed_goods_price">
+                        <span>￥</span>
+                        <span>${elm.goods_price}</span>
+                        <span>券</span>
+                    </div>
+                </a>
+                <div class="resemble">
+                    <div>
+                        <span class=""></span>
+                        <span>找相似</span>
+                    </div>
+                </div>
+            </li>`
+            })
+            $('.goods_list').html(temp)
+        }
+
+    })
 })
 
 

@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/shoppingCart_nav.css">
     <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/details_nav.css">
+    <link rel="stylesheet" href="../css/details_goods.css">
+    <script src="../js/details/details.js" type="module"></script>
 </head>
 
 <body>
@@ -21,41 +23,8 @@
             </div>
             <ul>
                 <li>
-                    <span>那你可真棒！</span>
-                    <img alt="">
-                    <span style="font-size: 12px;" class="iconfont icon-xiajiantou"></span>
-                    <div class="myjdlist_user">
-                        <div class="top">
-                            <img src="../img/shoppingCart/head_img.jpg" alt="">
-                            <div>
-                                <div>
-                                    <img alt="">
-                                    <span>退出</span>
-                                </div>
-                                <p>开通PLUS&nbsp;&nbsp; 平均省1012元/年&gt;</p>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <span class="iconfont icon-zuojiantou"></span>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <span></span>
-                                        <p>开通正式版</p>
-                                    </li>
-                                    <li>
-                                        <span></span>
-                                        <p>运费单免</p>
-                                    </li>
-                                    <li>
-                                        <span>生日特权</span>
-                                        <p></p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="iconfont icon-youjiantou"></span>
-                        </div>
-                    </div>
+                    <a href="./login.html">你好，请登录</a>
+                    <a href="./register.html" class="red">免费注册</a>
                 </li>
                 <li><a href="">我的订单</a></li>
                 <li class="dropdown">
@@ -222,7 +191,7 @@
                     <a href="">手机京东</a>
                     <div class="myjdlist_sjjd">
                         <div>
-                            <img src="../img//nav/myjdlist_sjjd1.webp" alt="">
+                            <img src="../img/nav/myjdlist_sjjd1.webp" alt="">
                             <div>
                                 <p>手机京东</p>
                                 <p class="red">新人专享大礼包</p>
@@ -230,7 +199,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../img//nav/myjdlist_sjjd2.webp" alt="">
+                            <img src="../img/nav/myjdlist_sjjd2.webp" alt="">
                             <div>
                                 <p>关注京东</p>
                                 <p>JD.COM</p>
@@ -238,7 +207,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../img//nav/myjdlist_sjjd3.webp" alt="">
+                            <img src="../img/nav/myjdlist_sjjd3.webp" alt="">
                             <div>
                                 <p>京东金融客户端</p>
                                 <p class="red">新人专享大礼包</p>
@@ -246,14 +215,14 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../img//nav/myjdlist_sjjd4.webp" alt="">
+                            <img src="../img/nav/myjdlist_sjjd4.webp" alt="">
                             <div>
                                 <p>京东健康客户端</p>
                                 <img class="img2" src="../img/nav/myjdlist_sjjd7.png" alt="">
                             </div>
                         </div>
                         <div>
-                            <img src="../img//nav/myjdlist_sjjd5.webp" alt="">
+                            <img src="../img/nav/myjdlist_sjjd5.webp" alt="">
                             <div>
                                 <p>关注京东小程序</p>
                                 <p class="red">新人0.1元购</p>
@@ -266,20 +235,178 @@
         </div>
     </div>
 
-    <div id="search">
+    <div id="top2">
         <div class="container">
-            <div class="left">
-                <img src="../img/shoppingCart/logo.png" alt="">
+            <div class="logo">
+                <a href="">
+                    全部分类
+                    <span class="iconfont icon-xiajiantou" style="font-size: 12px;"></span>
+                </a>
             </div>
-            <div class="cart_search">
-                <input type="text">
-                <input type="button" value="搜索">
+            <div class="search">
+                <input type="text" placeholder="11.11">
+                <button>搜全站</button>
+                <button>搜本店</button>
+            </div>
+            <div class="my_shop">
+                <div>
+                    <span class="iconfont icon-ziyuan"></span>
+                    <span class="iconfont icon-youjiantou"></span>
+                    <span class="my_shop_num"></span>
+                    <a href="">我的购物车</a>
+                </div>
+            </div>
+            <div class="hotwords">
+                <a href="">X50 Pro</a>
+                <a href="">魅族17</a>
+                <a href="">OPPO</a>
+                <a href="">华为</a>
+                <a href="">氮化镓</a>
+                <a href="">三星Note10+</a>
+                <a href="">iPhone11</a>
             </div>
         </div>
     </div>
 
-    <div id="cart_body">
+    <div id="_details">
+        <div class="container">
+            <div class="left">
+                <div class="top">
+                    <img id="left_img" src="" alt="">
+                </div>
+                <div class="center">
+                    <a href="" class="iconfont icon-zuojiantou"></a>
+                    <a href="" class="iconfont icon-youjiantou"></a>
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="top">
+                        <span></span>
+                        <span>关注</span>
+                        <span></span>
+                        <span>分享</span>
+                        <span></span>
+                        <span>对比</span>
+                        <span>举报</span>
+                    </div>
+                    <div class="bottom">
+                        <span>企业购更优惠</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="sku-name">
+                    Apple iPhone 12 Pro (A2408) 128GB 海蓝色 支持移动联通电信5G 双卡双待手机
+                </div>
+                <div class="news">
+                    <div>Pro级摄像头，大有可为！惊喜直达<a href="">查看</a></div>
+                </div>
+                <div class="summary_first">
+                    <div class="top">
+                        <div>
+                            京&nbsp;&nbsp;东&nbsp;&nbsp;价
+                        </div>
+                        <div>
+                            <span>￥</span>
+                            <span class="_price"></span>
+                            <span>降价通知</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>累计评价</p>
+                        <p>10万+</p>
+                    </div>
+                    <div class="bottom">
+                        <span>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</span>
+                        <div class="give">
+                            <div>
+                                <span>赠品</span>
+                                <div>
+                                    <img src="" alt="">X1
+                                    <img src="" alt="">X1
+                                    <img src="" alt="">X1
+                                    <span>（赠完即止）</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>换购</span>
+                                <span>换购</span>
+                            </div>
+                        </div>
+                        <span class="open">展开促销<span class="iconfont icon-xiajiantou"></span></span>
+                    </div>
+                </div>
+                <div class="summary_all">
+                    <div class="increment">
+                        <span>增值业务</span>
+                        <div>高价回收，急速到账</div>
+                    </div>
+                    <div class="distribution">
+                        <div class="address">
+                            <span>配送至</span>
+                            <select name="" id="">
+                                <option value="">浙江杭州市富阳区</option>
+                            </select>
+                            <span style="color:#ccc;font-weight: bold;">有货</span>
+                            <span style="color:#ccc">支持</span>
+                            <span class="color">可配送港澳台</span>
+                            <span class="color">99元免基础运费</span>
+                        </div>
+                        <div class="logistics">
+                            <img src="../img/detalis/wuliu.png" alt="">
+                            <a href="">次日达</a>
+                            <span></span>
+                            <a href="">预约送货</a>
+                            <span></span>
+                            <a href="">部分收获</a>
+                        </div>
+                        <div class="time">
+                            由<span>京东</span>发货，并提供售后服务，23：10前下单，预计明天送达
+                        </div>
+                    </div>
+                    <div class="weight">
+                        <span>重量</span>
+                        <span>0.35kg</span>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="shopping_cart">
+                        <div>
+                            <input type="number" min="1" value="1">
+                            <span class="add">+</span>
+                            <span class="subtract">-</span>
+                        </div>
+                        <span class="add_shopping">加入购物车</span>
+                    </div>
+                    <div class="tips">
+                        <span>温馨提示</span>
+                        <span>·支持7天无理由退换货（拆封后不支持）</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div id="introduce">
+        <div class="container">
+            <ul>
+                <li class="active">商品介绍</li>
+                <li>规格包装</li>
+                <li>售后保障</li>
+                <li>商品介绍</li>
+                <li>手机社区</li>
+            </ul>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 </body>
 

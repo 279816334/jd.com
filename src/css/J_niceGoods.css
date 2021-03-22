@@ -58,14 +58,17 @@
   overflow: hidden;
   padding: 0 20px;
 }
-#J_niceGoods > .container > .right > .swiper-container4 .swiper-slide {
-  height: 260px;
+#J_niceGoods > .container > .right > .swiper-container4 .swiper-slide:nth-of-type(odd) {
+  margin: 50px 50px 0  0;
+}
+#J_niceGoods > .container > .right > .swiper-container4 .swiper-slide:nth-of-type(odd) {
+  margin: 20px 50px 0  0;
 }
 #J_niceGoods > .container > .right > .swiper-container4 .swiper-slide div {
   float: left;
   width: 150px ;
-  height: 210px;
-  margin: 20px 36px 0 0;
+  height: 150px;
+  margin: 10px 0;
 }
 #J_niceGoods > .container > .right > .swiper-container4 .swiper-slide div:first-of-type {
   margin-left: 20px;
@@ -82,21 +85,4 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 10px;
-}
-#J_niceGoods > .container > .right > .swiper-container4 .scroll_bottom {
-  height: 3px;
-  width: 96%;
-  left: 2%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
-  bottom: 5px;
-  z-index: 999;
-}
-#J_niceGoods > .container > .right > .swiper-container4 .scroll_bottom div {
-  width: 99px;
-  height: 9px;
-  position: absolute;
-  top: -3px;
-  background-color: #D8D8D8;
-  border-radius: 4px;
 }

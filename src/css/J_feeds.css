@@ -1,0 +1,187 @@
+@charset 'utf-8';
+.J_feeds_tabs_active {
+  background: #e1251b;
+  color: #fff;
+  width: 70px;
+  height: 27px;
+  line-height: 27px;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 0 5px;
+}
+#J_feeds {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 30px;
+}
+#J_feeds .container {
+  width: 1190px;
+  height: auto;
+  overflow: hidden;
+}
+#J_feeds .container .floorhd {
+  position: relative;
+  height: 45px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+  padding: 0px 30px;
+  margin: 0px auto 20px;
+  overflow: hidden;
+  color: #333333;
+}
+#J_feeds .container .floorhd::before {
+  position: absolute;
+  content: "";
+  left: 490px;
+  top: 15px;
+  display: block;
+  width: 25px;
+  height: 20px;
+  background: url("../img/J_feeds/sprite.png") no-repeat;
+}
+#J_feeds .container .floorhd::after {
+  position: absolute;
+  content: "";
+  left: 670px;
+  top: 15px;
+  display: block;
+  width: 25px;
+  height: 20px;
+  background: url("../img/J_feeds/sprite.png") no-repeat right;
+}
+#J_feeds .container .feed_tabs {
+  height: 60px;
+  margin: 10px 0;
+  background-color: white;
+}
+#J_feeds .container .feed_tabs ul {
+  margin: 0 55px;
+}
+#J_feeds .container .feed_tabs ul li {
+  height: 50px;
+  padding-top: 8px;
+  cursor: pointer;
+  list-style: none;
+  float: left;
+  width: 16.66666667%;
+  text-align: center;
+  position: relative;
+}
+#J_feeds .container .feed_tabs ul li > div {
+  text-align: center;
+}
+#J_feeds .container .feed_tabs ul li > div:first-of-type {
+  width: 100%;
+  height: 27px;
+  font-weight: bold;
+  position: absolute;
+  top: 8px;
+}
+#J_feeds .container .feed_tabs ul li > div:nth-of-type(2) {
+  width: 100%;
+  font-size: 14px;
+  color: #999;
+  position: absolute;
+  bottom: 5px;
+}
+#J_feeds .container .feed_tabs ul li > div:last-of-type {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  margin: 10px 0;
+  width: 1px;
+  background: linear-gradient(180deg, white, #dfdfdf 51%, white);
+}
+#J_feeds .container .feed_page {
+  height: auto;
+  overflow: hidden;
+}
+#J_feeds .container .feed_page .goods_list {
+  overflow: hidden;
+  height: auto;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods {
+  list-style: none;
+  width: 230px;
+  height: 322px;
+  margin: 0 10px 5px 0;
+  background-color: white;
+  float: left;
+  position: relative;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods:nth-of-type(5n) {
+  margin-right: 0;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods a .feed_goods_img {
+  width: 150px;
+  height: 150px;
+  margin: 30px 40px 40px;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods a .feed_goods_img img {
+  width: 150px;
+  height: 150px;
+  transition: 0.3s;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods a .feed_goods_img img:hover {
+  opacity: 0.8;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods a .feed_goods_title {
+  padding: 0 20px;
+  font-size: 14px;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods a .feed_goods_price {
+  margin-top: 10px;
+  padding: 0 20px;
+  color: red;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods a .feed_goods_price span:first-of-type {
+  font-size: 12px;
+  margin-right: -5px;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods a .feed_goods_price span:nth-of-type(2) {
+  font-weight: bold;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods a .feed_goods_price span:last-of-type {
+  float: right;
+  border: 1px solid red;
+  font-size: 12px;
+  width: 20px;
+  line-height: 12px;
+  margin-top: 3px;
+  height: 14px;
+  text-align: center;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods:hover .resemble {
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0, white 35%, white);
+}
+#J_feeds .container .feed_page .goods_list .feed_goods .resemble {
+  width: 100%;
+  height: 66px;
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s;
+  opacity: 0;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods .resemble div {
+  height: 28px;
+  width: 120px;
+  display: inline-block;
+  font-size: 12px;
+  color: white;
+  border: 1px solid #353131;
+  border-radius: 15px;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 55px;
+  margin-top: 5px;
+  background-color: #333;
+}
+#J_feeds .container .feed_page .goods_list .feed_goods .resemble div span:nth-of-type(2) {
+  margin-left: 10px;
+}

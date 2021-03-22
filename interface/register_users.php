@@ -2,7 +2,7 @@
 
 $username=$_POST["username"];
 
-$link=mysqli_connect('localhost','root','123456','users');
+$link=mysqli_connect('localhost','root','123456','jd.com');
 $str="SELECT * FROM `users` WHERE `username` ='$username'";
 $res=mysqli_query($link,$str);
 $data=mysqli_fetch_all($res,MYSQLI_ASSOC);

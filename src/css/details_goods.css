@@ -1,0 +1,399 @@
+@charset "utf-8";
+.active {
+  background-color: #c81623;
+}
+#_details {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+  background-color: white;
+  padding-bottom: 50px;
+}
+#_details .container {
+  width: 1210px;
+  height: auto;
+}
+#_details .container > .left {
+  float: left;
+  width: 452px;
+  height: 625px;
+}
+#_details .container > .left > .top {
+  width: 450px;
+  height: 450px;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+#_details .container > .left > .top img {
+  width: 450px;
+  height: 450px;
+}
+#_details .container > .left .center {
+  height: 58px;
+  line-height: 58px;
+  margin-bottom: 10px;
+}
+#_details .container > .left .center a {
+  width: 22px;
+  height: 32px;
+  font-size: 30px;
+  font-weight: 1000;
+}
+#_details .container > .left .center a:first-of-type {
+  float: left;
+  margin-right: 12px;
+}
+#_details .container > .left .center a:last-of-type {
+  float: right;
+  margin-right: 10px;
+}
+#_details .container > .left .center div {
+  float: left;
+  width: 380px;
+  height: 58px;
+  background-color: red;
+}
+#_details .container > .left .center div ul > li {
+  float: left;
+  list-style: none;
+}
+#_details .container > .left .bottom {
+  height: 80px;
+  font-size: 12px;
+}
+#_details .container > .left .bottom .top {
+  color: #666;
+  height: 20px;
+}
+#_details .container > .left .bottom .top span {
+  cursor: pointer;
+}
+#_details .container > .left .bottom .top span:nth-of-type(odd) {
+  margin-right: 5px;
+}
+#_details .container > .left .bottom .top span:nth-of-type(even):hover {
+  color: #c81623;
+}
+#_details .container > .left .bottom .top span:last-child {
+  float: right;
+}
+#_details .container > .left .bottom .top span:last-child:hover {
+  color: #c81623;
+}
+#_details .container > .left .bottom .bottom {
+  cursor: pointer;
+  width: 72px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 0 16px;
+  margin-top: 30px;
+}
+#_details .container > .left .bottom .bottom:hover {
+  border-color: #c81623;
+}
+#_details .container > .right {
+  float: right;
+  width: 738px;
+  height: auto;
+}
+#_details .container > .right .sku-name {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+  height: auto;
+}
+#_details .container > .right .news {
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #c81623;
+  margin-bottom: 5px;
+}
+#_details .container > .right .news a {
+  color: #5e69ad;
+  text-decoration: underline;
+}
+#_details .container > .right .summary_first {
+  height: 90px;
+  padding-top: 10px;
+  background-color: #f3f3f3;
+  position: relative;
+}
+#_details .container > .right .summary_first > .top {
+  height: 22px;
+  line-height: 22px;
+}
+#_details .container > .right .summary_first > .top > div {
+  float: left;
+}
+#_details .container > .right .summary_first > .top > div:first-of-type {
+  font-size: 12px;
+  width: 48px;
+  height: 22px;
+  padding-left: 10px;
+}
+#_details .container > .right .summary_first > .top > div:last-of-type {
+  margin-left: 10px;
+  width: 668px;
+  height: 22px;
+}
+#_details .container > .right .summary_first > .top > div:last-of-type span:first-of-type {
+  font-size: 16px;
+  color: red;
+}
+#_details .container > .right .summary_first > .top > div:last-of-type span:nth-of-type(2) {
+  font-size: 22px;
+  color: red;
+}
+#_details .container > .right .summary_first > .top > div:last-of-type span:last-of-type {
+  font-size: 12px;
+  color: #005aa0;
+}
+#_details .container > .right .summary_first > .comment {
+  width: 49px;
+  height: 35px;
+  padding: 0 10px;
+  border-left: 1px solid #ccc;
+  font-size: 12px;
+  float: right;
+  margin-top: -20px;
+}
+#_details .container > .right .summary_first > .comment p:last-of-type {
+  font-size: 16px;
+  color: #005e77;
+}
+#_details .container > .right .summary_first > .comment p:last-of-type:hover {
+  color: #c81623;
+}
+#_details .container > .right .summary_first > .bottom {
+  font-size: 12px;
+  margin-top: 5px;
+  height: auto;
+  overflow: hidden;
+  line-height: 30px;
+}
+#_details .container > .right .summary_first > .bottom > span {
+  float: left;
+  padding-left: 10px;
+  height: 30px;
+  width: 48px;
+}
+#_details .container > .right .summary_first > .bottom .give {
+  float: left;
+  padding-left: 15px;
+}
+#_details .container > .right .summary_first > .bottom .give > div:first-of-type {
+  width: 500px;
+  height: 30px;
+}
+#_details .container > .right .summary_first > .bottom .give > div:first-of-type > span {
+  float: left;
+  border: 1px solid red;
+  width: 24px;
+  height: 16px;
+  line-height: 16px;
+  padding: 2px 3px;
+}
+#_details .container > .right .summary_first > .bottom .give > div:first-of-type > div {
+  float: left;
+}
+#_details .container > .right .summary_first > .bottom .give > div:last-of-type {
+  width: 500px;
+}
+#_details .container > .right .summary_first > .bottom .give > div:last-of-type > span {
+  float: left;
+  border: 1px solid red;
+  width: 24px;
+  height: 16px;
+  line-height: 16px;
+  padding: 2px 3px;
+  margin-right: 5px;
+}
+#_details .container > .right .summary_first > .bottom .open {
+  position: absolute;
+  width: 100px;
+  right: 0;
+  text-align: right;
+  font-size: 14px;
+  bottom: 5px;
+}
+#_details .container > .right .summary_all {
+  padding-left: 10px;
+  width: 728px;
+  overflow: hidden;
+}
+#_details .container > .right .summary_all .increment {
+  width: 728px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+}
+#_details .container > .right .summary_all .increment span {
+  letter-spacing: 2px;
+  float: left;
+}
+#_details .container > .right .summary_all .increment div {
+  float: left;
+  width: 135px;
+  margin-top: 6px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#_details .container > .right .summary_all .distribution {
+  overflow: hidden;
+}
+#_details .container > .right .summary_all .distribution .address {
+  height: 24px;
+  line-height: 24px;
+}
+#_details .container > .right .summary_all .distribution .address span {
+  font-size: 12px;
+}
+#_details .container > .right .summary_all .distribution .address span:nth-of-type(1) {
+  letter-spacing: 8px;
+}
+#_details .container > .right .summary_all .distribution .address .color {
+  color: #646fb0;
+}
+#_details .container > .right .summary_all .distribution .address select {
+  width: 132px;
+  height: 23px;
+}
+#_details .container > .right .summary_all .distribution .logistics {
+  width: 658px;
+  margin-top: 10px;
+  height: 32px;
+  line-height: 32px;
+  margin-left: 65px;
+  overflow: hidden;
+}
+#_details .container > .right .summary_all .distribution .logistics img {
+  margin-top: 8px;
+  float: left;
+  width: 86px;
+  height: 16px;
+}
+#_details .container > .right .summary_all .distribution .logistics a {
+  float: left;
+  color: #646fb0;
+  font-size: 12px;
+  margin: 0 10px;
+}
+#_details .container > .right .summary_all .distribution .logistics span {
+  float: left;
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+#_details .container > .right .summary_all .distribution .time {
+  margin-left: 65px;
+  width: 658px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  color: #888;
+}
+#_details .container > .right .summary_all .distribution .time span {
+  color: red;
+  margin: 0 5px;
+}
+#_details .container > .right .summary_all .weight span {
+  font-size: 12px;
+}
+#_details .container > .right .summary_all .weight span:first-of-type {
+  color: #ccc;
+  letter-spacing: 28px;
+}
+#_details .container > .right .summary_all .weight span:last-of-type {
+  margin-left: -20px;
+}
+#_details .container > .right .summary_all .hr {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 15px 0;
+}
+#_details .container > .right .summary_all .shopping_cart {
+  position: relative;
+  margin-top: 20px;
+}
+#_details .container > .right .summary_all .shopping_cart div {
+  display: inline-block;
+  position: relative;
+}
+#_details .container > .right .summary_all .shopping_cart div span {
+  position: absolute;
+  width: 15px;
+  height: 22px;
+  border: 1px solid #ccc;
+  background-color: #F1f1f1;
+  text-align: center;
+  cursor: pointer;
+}
+#_details .container > .right .summary_all .shopping_cart div span:first-of-type {
+  left: 42px;
+}
+#_details .container > .right .summary_all .shopping_cart div span:last-of-type {
+  left: 42px;
+  top: 24px;
+}
+#_details .container > .right .summary_all .shopping_cart input {
+  width: 43px;
+  height: 42px;
+  padding: 1px 2px;
+  outline: none;
+}
+#_details .container > .right .summary_all .shopping_cart input::-webkit-outer-spin-button,
+#_details .container > .right .summary_all .shopping_cart input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+#_details .container > .right .summary_all .shopping_cart > span {
+  position: absolute;
+  display: inline-block;
+  width: 92px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 26px;
+  left: 70px;
+  background-color: #df3033;
+}
+#_details .container > .right .summary_all .tips {
+  margin-top: 25px;
+}
+#_details .container > .right .summary_all .tips span {
+  font-size: 12px;
+}
+#introduce {
+  width: 100%;
+}
+#introduce .container {
+  background-color: white;
+  width: 1210px;
+  position: relative;
+}
+#introduce .container ul {
+  height: 40px;
+  line-height: 40px;
+}
+#introduce .container ul li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  list-style: none;
+}
+#introduce .container div {
+  position: absolute;
+  margin-top: 40px;
+}

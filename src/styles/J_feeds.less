@@ -1,0 +1,196 @@
+@charset 'utf-8';
+
+.J_feeds_tabs_active{
+    background: #e1251b;
+    color: #fff;
+    width: 70px;
+    height: 27px;
+    line-height: 27px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 0 5px;
+}
+
+#J_feeds{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 30px;
+    .container{
+        width: 1190px;
+        height: auto;
+        overflow: hidden;
+        .floorhd{
+            position: relative;
+            height: 45px;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 45px;
+            padding: 0px 30px;
+            margin: 0px auto 20px;
+            overflow: hidden;
+            color: rgb(51, 51, 51);
+            &::before{
+                position: absolute;
+                content: "";
+                left: 490px;
+                top: 15px;
+                display: block;
+                width: 25px;
+                height: 20px;
+                background: url("../img/J_feeds/sprite.png") no-repeat;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                left: 670px;
+                top: 15px;
+                display: block;
+                width: 25px;
+                height: 20px;
+                background: url("../img/J_feeds/sprite.png") no-repeat right;
+            }
+        }
+        .feed_tabs{
+            height: 60px;
+            margin: 10px 0;
+            background-color: white;
+            ul{
+                margin: 0 55px;
+                li{
+                    height: 50px;
+                    padding-top: 8px;
+                    cursor: pointer;
+                    list-style: none;
+                    float: left;
+                    width: (100%/6);
+                    text-align: center;
+                    position: relative;
+                    >div{
+                        text-align: center;
+                        &:first-of-type{
+                            width: 100%;
+                            height: 27px;
+                            font-weight: bold;
+                            position: absolute;
+                            top: 8px;
+                        }
+                        &:nth-of-type(2){
+                            width: 100%;
+                            font-size: 14px;
+                            color: #999;
+                            position: absolute;
+                            bottom: 5px;
+                        }
+                        &:last-of-type{
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            height: 40px;
+                            margin: 10px 0;
+                            width: 1px;
+                            background: linear-gradient(180deg,white,#dfdfdf 51%,white);
+                        }
+                    }
+                }
+            }
+        }
+        .feed_page{
+            height: auto;
+            overflow: hidden;
+            .goods_list{
+                overflow: hidden;
+                height: auto;
+                .feed_goods{
+                    list-style: none;
+                    width: 230px;
+                    height: 322px;
+                    margin: 0 10px 5px 0;
+                    background-color: white;
+                    float: left;
+                    position: relative;
+                    &:nth-of-type(5n){
+                        margin-right: 0;
+                    }
+                    a{
+                        .feed_goods_img{
+                            width: 150px;
+                            height: 150px;
+                            margin: 30px 40px 40px;
+                            img{
+                                width: 150px;
+                                height: 150px;
+                                transition: .3s;
+                                &:hover{
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                        .feed_goods_title{
+                            padding: 0 20px;
+                            font-size: 14px;
+                        }
+                        .feed_goods_price{
+                            margin-top: 10px;
+                            padding: 0 20px;
+                            color: red;
+                            span{
+                                &:first-of-type{
+                                    font-size: 12px;
+                                    margin-right: -5px;
+                                }
+                                &:nth-of-type(2){
+                                    font-weight: bold;
+                                }
+                                &:last-of-type{
+                                    float: right;
+                                    border: 1px solid red;
+                                    font-size: 12px;
+                                    width: 20px;
+                                    line-height: 12px;
+                                    margin-top: 3px;
+                                    height: 14px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    &:hover .resemble{
+                        opacity: 1;
+                        background: linear-gradient(180deg,rgba(255,255,255,.8) 0,white 35%,white);;
+                    }
+                    .resemble{
+                        width: 100%;
+                        height: 66px;
+                        position: absolute;
+                        bottom: 0;
+                        transition: .5s;
+                        opacity: 0;
+                        div{
+                            height: 28px;
+                            width: 120px;
+                            display: inline-block;
+                            font-size: 12px;
+                            color: white;
+                            border: 1px solid #353131;
+                            border-radius: 15px;
+                            line-height: 28px;
+                            text-align: center;
+                            cursor: pointer;
+                            margin-left:55px;
+                            margin-top: 5px;
+                            background-color: #333;
+                            span{
+                                &:nth-of-type(2){
+                                    margin-left: 10px;
+                                }
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
