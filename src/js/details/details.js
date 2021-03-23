@@ -10,7 +10,7 @@ function getCookie (key) {
     document.cookie.split('; ').forEach(elm => {
         obj[elm.split('=')[0]] = elm.split('=')[1]
     })
-    return obj[key];
+    return key ? obj[key] : obj;
 }
 $(function () {
     try {

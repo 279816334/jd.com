@@ -1,9 +1,32 @@
 import $ from '../library/jquery.js';
 import Swiper from '../library/swiper.js';
+import {
+    setCookie,
+    getCookie
+} from '../library/cookie.js'
 
+
+function blockScrollTop () {
+    let top = document.documentElement.scrollTop;
+    if (top > 580) {
+        $('#fixed_Search').css('height', 50)
+    } else {
+        $('#fixed_Search').css('height', 0)
+    }
+}
+
+function getShopNum () {
+    try {
+        $('._num').text(JSON.parse(getCookie('shop')).length)
+    } catch (error) {
+        $('._num').text('0')
+    }
+}
 
 $(function () {
     // banner 轮播图
+    blockScrollTop();
+    getShopNum();
     let mySwiper = new Swiper('.swiper-container', {
         autoplay: {
             delay: 2000,
@@ -210,6 +233,8 @@ $(function () {
     //     ]
     // }
     // $('.feed_goods_img').children('img').prop('src', b.img[0])
+    // =======================================================================
+    // 渲染
     $.ajax({
         url: '../../interface/index_goods.php',
         type: 'get',
@@ -219,7 +244,7 @@ $(function () {
             res.forEach((elm, i) => {
                 temp += `   
                 <li class="feed_goods">
-                <a href="./details.html?id=${elm.id}">
+                <a href="./details.html?id=${elm.id}" target="_blank">
                     <div class="feed_goods_img">
                         <img src="${JSON.parse(elm.goods_img)[0].src}" alt="">
                     </div>
@@ -244,6 +269,23 @@ $(function () {
         }
 
     })
+
+
+    $(window).on('scroll', function () {
+        blockScrollTop();
+    })
+
+
+    $('.shopping').on({
+        'mouseenter': function () {
+            getShopNum()
+        },
+        'click': function () {
+            window.open('../html/shoppingCart.html');
+        }
+    })
+
+
 })
 
 

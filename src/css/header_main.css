@@ -176,3 +176,115 @@
   width: 70px;
   height: 70px;
 }
+#fixed_Search {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: #fff;
+}
+#fixed_Search .container {
+  width: 1190px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+#fixed_Search .container .left {
+  float: left;
+}
+#fixed_Search .container .left img {
+  width: 80px;
+  height: 50px;
+}
+#fixed_Search .container .center {
+  float: left;
+  margin-left: 50px;
+  width: 770px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#fixed_Search .container .center .search {
+  width: 550px;
+  height: 37px;
+  border: 2px solid #C81623;
+  padding: 1px 0 1px 17px ;
+  box-sizing: border-box;
+  background-color: white;
+  margin-left: 170px;
+}
+#fixed_Search .container .center .search input {
+  float: left;
+  border: none;
+  margin-top: 3px;
+  width: 425px;
+  height: 26px;
+  outline: none;
+}
+#fixed_Search .container .center .search input::placeholder {
+  color: #999;
+}
+#fixed_Search .container .center .search span {
+  text-align: center;
+  cursor: pointer;
+  line-height: 32px;
+}
+#fixed_Search .container .center .search span:nth-of-type(1) {
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 15px;
+  transform: translateY(-10px);
+}
+#fixed_Search .container .center .search span:nth-of-type(1):hover {
+  color: #C81623;
+}
+#fixed_Search .container .center .search span:nth-of-type(2) {
+  float: right;
+  margin-right: 0;
+  width: 58px;
+  height: 34px;
+  margin-top: -1px;
+  display: block;
+  background-color: #ee3642;
+  color: white;
+  transition: 0.3s;
+  font-weight: bold;
+}
+#fixed_Search .container .center .search span:nth-of-type(2):hover {
+  background-color: #C81623;
+}
+#fixed_Search .container .center .shopping {
+  cursor: pointer;
+  width: 132px;
+  height: 34px;
+  line-height: 34px;
+  background-color: white;
+  position: absolute;
+  right: 190px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  text-align: center;
+}
+#fixed_Search .container .center .shopping .span1 {
+  float: left;
+  margin-left: 20px;
+}
+#fixed_Search .container .center .shopping:hover {
+  border-color: #C81623;
+}
+#fixed_Search .container .center .shopping div {
+  width: 18px;
+  height: 14px;
+  top: 2px;
+  line-height: 14px;
+  border-radius: 6px;
+  color: white;
+  left: 30px;
+  background-color: red;
+  position: absolute;
+}

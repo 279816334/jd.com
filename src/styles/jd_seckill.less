@@ -4,6 +4,7 @@
 #jd_seckill{
     width: 100%;
     overflow: hidden;
+    position: relative;
     background-color: #f4f4f4;
     >.container{
         padding-top: 30px;
@@ -250,6 +251,34 @@
                 }
             }
         }
+    }
+}
+#fixed{
+    position: absolute;
+    right: 87px;
+    top: 681px;
+    ul{
+        font-size: 14px;
+        background-color: white;
+        li{
+            cursor: pointer;
+            list-style: none;
+            padding: 12px 12px;
+            height: 34px;
+            line-height: 18px;
+            width: 34px;
+            text-align: center;
+            transition: .4s;
+            &:hover{
+                background-color: #c81623;
+                color: white;
+            }
 
+            &:last-of-type{
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+        }
     }
 }

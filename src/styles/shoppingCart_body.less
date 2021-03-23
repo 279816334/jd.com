@@ -1,0 +1,199 @@
+@charset 'utf-8';
+
+#cart_body{
+    .container{
+        width: 990px;
+        height: auto;
+        .all_goods_head{
+            height: auto;
+            line-height: 40px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            >span{
+                color: red;
+                &:first-of-type{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                &:last-of-type{
+
+                }
+            }
+            .all_checked{
+                display: block;
+                height: 32px;
+                line-height: 32px;
+                margin: 0 0 10px;
+                padding: 5px 0;
+                background: #f3f3f3;
+                border: 1px solid #e9e9e9;
+                border-top: 0;
+                position: relative;
+                font-size: 12px;
+                input[type=checkbox]{
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    float: left;
+                }
+                span{
+                    display: inline-block;
+                    &:first-of-type{
+                        margin-right: 100px;
+                        margin-left: 10px;
+                        float: left;
+                    }
+                    &:nth-of-type(2){
+                        margin-right: 450px;
+                    }
+                    &:nth-of-type(3){
+                        margin-right:60px;
+                    }
+                    &:nth-of-type(4){
+                        margin-right:90px;
+                    }
+                    &:nth-of-type(5){
+                        margin-right:30px;
+                    }
+                }
+            }
+        }
+        .all_goods_body{
+            font-size: 12px;
+            height: auto;
+            overflow: hidden;
+            .goods_null{
+                height: 500px;
+                line-height: 500px;
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+                color: #aaa;
+            }
+            ._goods{
+                padding-left: 10px;
+                border: 1px solid #f1f1f1;
+                border-top: 2px solid #aaa;
+                background: #fff; 
+                display: flex;
+                height: auto;
+                margin-bottom: 30px;
+                padding-top: 20px;
+                >input{
+                    margin: 0;
+                    margin-right: 20px;
+                }
+                ._goods_container{
+                    display: flex;
+                    width: 500px;
+                    margin: 0;
+                    margin-bottom: 30px;
+                    
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                    div{
+                        font-size: 14px;
+                    }
+                }
+                .unitPrice{
+                    margin-left: 70px;
+                    padding-top: 5px;
+                    margin-right: 0;
+                }
+
+                .goods_num{
+                    margin: 0;
+                    margin-left: 20px;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        cursor: pointer;
+                        border: 1px solid #ccc;
+                        font-size: 14px;
+                        width: 17px;
+                        height: 18px;
+                        text-align: center;
+                        &:last-of-type{
+                            margin-left: -1px;
+                        }
+                    }
+                    input{
+                        width: 46px;
+                        margin-left: 18px;
+                        text-align: center;
+                        outline: none;
+                        height: 16px;
+                    }
+                }
+
+                .Subtotal{
+                    margin: 0;
+                    margin-left: 40px;
+                }
+
+                .goods_remove{
+                    cursor: pointer;
+                    margin: 0;
+                    margin-left: 30px;
+                    &:hover{
+                        color: #c81623;
+                    }
+                }
+               
+            }
+
+        }
+        .all_goods_total{
+            border: 1px solid #ccc;
+            height: 50px;
+            line-height: 50px;
+            font-size: 12px;
+            overflow: hidden;
+            padding-left: 10px;
+            .left{
+                width: 360px;
+                float: left;
+                input{
+                    margin-right: 5px;
+                }
+                span{
+                    margin-right: 10px;
+                    cursor: pointer;
+                    color: #666;
+                    &:last-of-type{
+                        font-weight: bold;
+                    }
+                    &:hover{
+                        color:#c81623
+                    }
+                }
+            }
+            .right{
+                float: right;
+                color: #666;
+                .settlement{
+                    display: inline-block;
+                    width: 94px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    background-color: #c81623;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: white;
+                    margin-left: 30px;
+                }
+                ._color{
+                    color: red;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                .right_num{
+                    color: red;
+                }
+            }
+
+        }
+    }
+}
