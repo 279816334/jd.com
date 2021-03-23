@@ -59,6 +59,15 @@
                         position: absolute;
                         top: -40px;
                         right: 0;
+                        .unline{
+                                bottom: 0;
+                                left: 11px;
+                                position: absolute;
+                                width: 28px;
+                                height: 2px;
+                                display: block;
+                                background-color: #c81623;
+                        }
                         >div{
                             width: 30px;
                             height: 20px;
@@ -73,15 +82,7 @@
                                 color: #c81623;
                             }
                             
-                            // &::after{
-                            //     content: "";
-                            //     width: 100%;
-                            //     position: absolute;
-                            //     display: block;
-                            //     width: 28px;
-                            //     height: 2px;
-                            //     background-color: #c81623;
-                            // }
+                            
                         }
                     }
 
@@ -92,7 +93,6 @@
                         width: 560px;
                         height: 270px;
                         padding: 0 15px 15px 15px;
-                        display: none;
                         >.specia_list{
                             width: 100%;   
                             height: 100%;
@@ -283,6 +283,10 @@
                         margin-right: 15px;
                         text-align: center;
                         background-color: #f4f8f4;
+                        cursor: pointer;
+                        &:hover{
+                            opacity: 0.8;
+                        }
                         >img{
                             &:first-of-type{
                                 width: 70px;

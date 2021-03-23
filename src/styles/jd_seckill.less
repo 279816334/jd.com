@@ -257,6 +257,7 @@
     position: absolute;
     right: 87px;
     top: 681px;
+    z-index: 999;
     ul{
         font-size: 14px;
         background-color: white;
@@ -277,8 +278,14 @@
             &:last-of-type{
                 height: 0;
                 padding: 0;
+                transition: .4s;
                 overflow: hidden;
+                color: #c81623;
             }
         }
     }
+}
+
+._red{
+    color: red;
 }

@@ -58,6 +58,9 @@
   overflow: hidden;
   padding: 0 20px;
 }
+#J_niceGoods > .container > .right > .swiper-container4 .swiper-slide {
+  cursor: pointer;
+}
 #J_niceGoods > .container > .right > .swiper-container4 .swiper-slide:nth-of-type(odd) {
   margin: 50px 50px 0  0;
 }

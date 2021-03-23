@@ -5,14 +5,67 @@ import {
     getCookie
 } from '../library/cookie.js'
 
+function countDown (futureDate) {
+    var currentDate = new Date();
+    var futureDate = new Date(futureDate);
+    var timeDifference = parseInt((futureDate - currentDate) / 1000);
+    var day = parseInt(timeDifference / 3600 / 24);
+    var hours = parseInt(timeDifference / 60 / 60 % 24);
+    var minute = parseInt(timeDifference / 60 % 60);
+    var second = parseInt(timeDifference % 60);
+    if (day < 10) day = "0" + day;
+    if (hours < 10) hours = "0" + hours;
+    if (minute < 10) minute = "0" + minute;
+    if (second < 10) second = "0" + second;
+    var str = day + '天' + hours + '小时' + minute + '分钟' + second + '秒'
+    var arr = [day, hours, minute, second]
+    return arr
+}
 
 function blockScrollTop () {
     let top = document.documentElement.scrollTop;
-    if (top > 580) {
-        $('#fixed_Search').css('height', 50)
+    let top1Height = $('#top1').height();
+    let top2Height = $('#top2').height();
+    let bannerHeight = $('#banner').height();
+    let jd_sekillHeight = $('#jd_seckill').height();
+    let jd_core1Height = $('#jd_core1').height();
+    let J_niceGoodsHeight = $('#J_niceGoods').height();
+    // let J_feedsHeight = $('#J_feeds').height();
+    if (top > 610) {
+        $('#fixed_Search').css('height', 50);
+        $('#fixed').css({
+            'position': 'fixed',
+            'top': 70
+        }).find('.go_top').css({
+            'padding': '12px 12px',
+            'height': 34
+        })
     } else {
         $('#fixed_Search').css('height', 0)
+        $('#fixed').css({
+            'position': 'absolute',
+            'top': 681
+        }).find('.go_top').css({
+            'padding': 0,
+            'height': 0
+        })
+
     }
+
+    if (top > (top1Height + top2Height + bannerHeight + jd_sekillHeight + jd_core1Height + J_niceGoodsHeight - 50)) {
+        $('#fixed').find('li').eq(3).addClass('_red').siblings().removeClass('_red')
+    } else if (top > (top1Height + top2Height + bannerHeight + jd_sekillHeight + jd_core1Height - 50)) {
+        $('#fixed').find('li').eq(2).addClass('_red').siblings().removeClass('_red')
+    } else if (top > (top1Height + top2Height + bannerHeight + jd_sekillHeight - 50)) {
+        $('#fixed').find('li').eq(1).addClass('_red').siblings().removeClass('_red')
+    } else if (top > (top1Height + top2Height + bannerHeight - 50)) {
+        $('#fixed').find('li').eq(0).addClass('_red').siblings().removeClass('_red')
+    } else {
+        $('#fixed').find('li').removeClass('_red')
+    }
+
+
+
 }
 
 function getShopNum () {
@@ -152,9 +205,8 @@ $(function () {
     // //     console.log($('.swiper-container4').children('.swiper-wrapper').css('left'));
     // // }, 15);
     let mySwiper4 = new Swiper('.swiper-container4', {
-        // autoplay: true,
         autoplay: {
-            delay: 10,
+            delay: 0,
             stopOnLastSlide: false,
             disableOnInteraction: false,
         },
@@ -188,9 +240,9 @@ $(function () {
 
     Array.from(mySwiper4.slides).forEach((elm, i) => {
         if (!(i % 2)) {
-            elm.style.margin = '20px 0 0  0';
+            elm.style.margin = '40px 0 0  0';
         } else {
-            elm.style.margin = '50px 0 0  0';
+            elm.style.margin = '20px 0 0  0';
         }
         elm.style.height = '200px'
     })
@@ -222,17 +274,6 @@ $(function () {
 
         },
     });
-    // let b = {
-    //     img: ['../img/J_feeds/goods1_img1.jpg',
-    //         '../img/J_feeds/goods1_img1_1.jpg',
-    //         '../img/J_feeds/goods1_img2.jpg',
-    //         '../img/J_feeds/goods1_img2_1.jpg',
-    //         '../img/J_feeds/goods1_img3.jpg',
-    //         '../img/J_feeds/goods1_img3_1.jpg',
-    //         '../img/J_feeds/goods1_introduce.jpg'
-    //     ]
-    // }
-    // $('.feed_goods_img').children('img').prop('src', b.img[0])
     // =======================================================================
     // 渲染
     $.ajax({
@@ -270,12 +311,13 @@ $(function () {
 
     })
 
-
+    // 滚动顶部导航，侧栏
     $(window).on('scroll', function () {
         blockScrollTop();
+
     })
 
-
+    // 我的购物车
     $('.shopping').on({
         'mouseenter': function () {
             getShopNum()
@@ -285,6 +327,82 @@ $(function () {
         }
     })
 
+    // 返回顶部
+    $('.go_top').on('click', function () {
+        scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    })
+
+    // fixed点击定位
+    $('#fixed').on('click', function (e) {
+        let target = e.target;
+        let top1Height = $('#top1').height();
+        let top2Height = $('#top2').height();
+        let bannerHeight = $('#banner').height();
+        let jd_sekillHeight = $('#jd_seckill').height();
+        let jd_core1Height = $('#jd_core1').height();
+        let J_niceGoodsHeight = $('#J_niceGoods').height();
+        switch (target.id) {
+            case 'fixed_jdms':
+                scrollTo({
+                    top: top1Height + top2Height + bannerHeight - 30,
+                    behavior: 'smooth'
+                })
+                break;
+            case 'fixed_tsyh':
+                scrollTo({
+                    top: top1Height + top2Height + bannerHeight + jd_sekillHeight - 40,
+                    behavior: 'smooth'
+                })
+                break;
+            case 'fixed_fxhh':
+                scrollTo({
+                    top: top1Height + top2Height + bannerHeight + jd_sekillHeight + jd_core1Height - 20,
+                    behavior: 'smooth'
+                })
+                break;
+            case 'fixed_wntj':
+                scrollTo({
+                    top: top1Height + top2Height + bannerHeight + jd_sekillHeight + jd_core1Height + J_niceGoodsHeight,
+                    behavior: 'smooth'
+                })
+                break;
+        }
+
+    })
+
+
+    $('.tab_body').eq(0).css('display', 'block').siblings('.tab_body').css('display', 'none');
+    $('.tab_head').children('div').on('mouseover', function () {
+        let _index = $(this).index();
+        $('.unline').css('left', 52 * _index + 11);
+        $('.tab_body').eq(_index).css('display', 'block').siblings('.tab_body').css('display', 'none');
+    })
+
+
+
+    setInterval(function () {
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth();
+        let day = date.getDate();
+        let hours = date.getHours();
+        if (hours % 2) {
+            $('.sessions').text(+hours + 1 + ':00');
+            let time = countDown(year + '/' + (month + 1) + '/' + day + ' ' + (hours + 1) + ':00:00');
+            $('.hours').text(time[1])
+            $('.minutes').text(time[2])
+            $('.seconds').text(time[3])
+        } else {
+            $('.sessions').text(+hours + 2 + ':00');
+            let time = countDown(year + '/' + (month + 1) + '/' + day + ' ' + (hours + 2) + ':00:00');
+            $('.hours').text(time[1])
+            $('.minutes').text(time[2])
+            $('.seconds').text(time[3])
+        }
+    }, 1000)
 
 })
 

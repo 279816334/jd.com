@@ -173,6 +173,9 @@ $(async function () {
         $('.all_goods_body').html(temp);
     }
 
+    $('#search').find('img').on('click', function () {
+        location.href = '../html/index.html'
+    }).css('cursor', 'pointer')
 
 })
 

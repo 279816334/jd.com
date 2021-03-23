@@ -1302,6 +1302,7 @@ a {
   position: absolute;
   right: 87px;
   top: 681px;
+  z-index: 999;
 }
 #fixed ul {
   font-size: 14px;
@@ -1324,7 +1325,12 @@ a {
 #fixed ul li:last-of-type {
   height: 0;
   padding: 0;
+  transition: 0.4s;
   overflow: hidden;
+  color: #c81623;
+}
+._red {
+  color: red;
 }
 #jd_core1 {
   margin-top: 20px;
@@ -1389,6 +1395,15 @@ a {
   top: -40px;
   right: 0;
 }
+#jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_head .unline {
+  bottom: 0;
+  left: 11px;
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  display: block;
+  background-color: #c81623;
+}
 #jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_head > div {
   width: 30px;
   height: 20px;
@@ -1410,7 +1425,6 @@ a {
   width: 560px;
   height: 270px;
   padding: 0 15px 15px 15px;
-  display: none;
 }
 #jd_core1 > .container > .J_special_offer > .box_bd > .tab > .tab_body > .specia_list {
   width: 100%;
@@ -1588,6 +1602,10 @@ a {
   margin-right: 15px;
   text-align: center;
   background-color: #f4f8f4;
+  cursor: pointer;
+}
+#jd_core1 > .container > .J_lightning_buy > .box_bd > .flash_buying > .left:hover {
+  opacity: 0.8;
 }
 #jd_core1 > .container > .J_lightning_buy > .box_bd > .flash_buying > .left > img:first-of-type {
   width: 70px;
@@ -1725,6 +1743,9 @@ a {
   height: 260px;
   overflow: hidden;
   padding: 0 20px;
+}
+#J_niceGoods > .container > .right > .swiper-container4 .swiper-slide {
+  cursor: pointer;
 }
 #J_niceGoods > .container > .right > .swiper-container4 .swiper-slide:nth-of-type(odd) {
   margin: 50px 50px 0  0;
