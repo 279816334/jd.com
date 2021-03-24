@@ -12,10 +12,10 @@ $(function () {
     getShopNum();
     $("img.lazy").lazyload({ effect: "fadeIn", threshold: 200, });
     if (getCookie('uname')) {
-        $('._username').text(getCookie('uname') + '')
+        $('._username').text(getCookie('uname') + '').prop('href', '')
         $('._register').text('')
     } else {
-        $('._username').text('你好，请登录')
+        $('._username').text('你好，请登录').prop('href', './login.html')
         $('._register').text('免费注册')
     }
     let mySwiper = new Swiper('.swiper-container', {
