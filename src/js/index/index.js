@@ -8,9 +8,9 @@ import '../library/jQuery.lazyload.js';
 
 $(function () {
     // banner 轮播图
-    $("img").lazyload({ effect: "fadeIn", threshold: 260, });
     blockScrollTop();
     getShopNum();
+    $("img.lazy").lazyload({ effect: "fadeIn", threshold: 200, });
     if (getCookie('uname')) {
         $('._username').text(getCookie('uname') + '')
         $('._register').text('')
@@ -226,7 +226,7 @@ $(function () {
                 <li class="feed_goods">
                 <a href="./details.html?id=${elm.id}" target="_blank">
                     <div class="feed_goods_img">
-                        <img src="${JSON.parse(elm.goods_img)[0].src[0]}" alt="">
+                        <img class="lazy" data-original="${JSON.parse(elm.goods_img)[0].src[0]}" alt="">
                     </div>
                     <div class="feed_goods_title">
                         <p>${(elm.goods_title).slice(0, 25)}...</p>
@@ -245,7 +245,8 @@ $(function () {
                 </div>
             </li>`
             })
-            $('.goods_list').html(temp)
+            $('.goods_list').html(temp);
+            $("img.lazy").lazyload({ effect: "fadeIn", threshold: 50, });
         }
 
     })
