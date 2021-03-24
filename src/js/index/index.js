@@ -1,18 +1,14 @@
 import $ from '../library/jquery.js';
 import Swiper from '../library/swiper.js';
-import {
-    setCookie,
-    getCookie
-} from '../library/cookie.js'
-import {
-    countDown,
-    blockScrollTop,
-    getShopNum
-} from './indexAPI.js'
+import { setCookie, getCookie } from '../library/cookie.js';
+import { countDown, blockScrollTop, getShopNum } from './indexAPI.js';
+import '../library/jQuery.lazyload.js';
+
 
 
 $(function () {
     // banner 轮播图
+    $("img").lazyload({ effect: "fadeIn", threshold: 260, });
     blockScrollTop();
     getShopNum();
     if (getCookie('uname')) {
