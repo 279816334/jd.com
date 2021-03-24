@@ -14,6 +14,11 @@ import {
 
 
 $(async function () {
+    if (getCookie('uname')) {
+        $('._uname').text(getCookie('uname'));
+    } else {
+        location.href = './login.html'
+    }
     try {
         let _id = [];
         let cookie = JSON.parse(getCookie('shop'))
@@ -34,7 +39,7 @@ $(async function () {
                 <div class="_goods">
                 <input type="checkbox" data-id="${i + 1}">
                 <div class="_goods_container">
-                    <img src="${JSON.parse(elm.goods_img)[0].src}" alt="">
+                    <img src="${JSON.parse(elm.goods_img)[0].src[0]}" alt="">
                     <div>
                        ${elm.goods_title}
                     </div>

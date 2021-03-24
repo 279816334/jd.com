@@ -1,17 +1,7 @@
 import $ from '../library/jquery.js';
-function setCookie (key, val, hours = 0, path = '/') {
-    let str = key + '=' + val;
-    let date = new Date();
-    let a = date.setTime(Date.now() + (hours - 8) * 3600 * 1000);
-    document.cookie = key + '=' + val + ';expires=' + date + ';path=' + path;
-}
-function getCookie (key) {
-    let obj = {};
-    document.cookie.split('; ').forEach(elm => {
-        obj[elm.split('=')[0]] = elm.split('=')[1]
-    })
-    return key ? obj[key] : obj;
-}
+import { setCookie, getCookie } from '../library/cookie.js';
+import { Enlarge } from './Enlarge.js';
+
 $(function () {
     try {
         $('.my_shop_num').text(JSON.parse(getCookie('shop')).length)
@@ -28,9 +18,21 @@ $(function () {
             let num = $('input[type=number]');
             let goods = {}
             let shop = [];
-            $('#left_img').prop('src', JSON.parse(res1.goods_img)[0].src)
+            let list_li = '';
+            new Enlarge('#_details .left');
+            JSON.parse(res1.goods_img)[0].src.forEach((elm, i) => {
+                if (i % 2 != 0) list_li += `<li><img src="${elm}"></img>`;
+            })
+            $('#left_img').prop('src', JSON.parse(res1.goods_img)[0].src[0])
+            $('.enlarge').css('background-image', 'url(' + JSON.parse(res1.goods_img)[0].src[0] + ')');
             $('.sku-name').text(res1.goods_title);
             $('._price').text(res1.goods_price);
+            $('.list').children().html(list_li).children().on('mouseover', function () {
+                let url = $(this).children().prop('src').slice(0, -6).concat('.jpg')
+                $(this).css('border', '1px solid #c81623').siblings().css('border', '1px solid transparent');
+                $('#left_img').prop('src', url);
+                $('.enlarge').css('background-image', 'url(' + url + ')');
+            });
             $('.add').on('click', function () {
                 let num = $('input[type=number]');
                 if (+num.val() >= res1.goods_stock) {
@@ -40,6 +42,7 @@ $(function () {
                 }
                 num.val(+$('input[type=number]').val() + 1)
             })
+
             $('.subtract').on('click', function () {
                 if (num.val() <= 1) {
                     alert('不能少于一件商品')
@@ -48,7 +51,12 @@ $(function () {
                 }
                 num.val(+$('input[type=number]').val() - 1)
             })
+
             $('.add_shopping').on('click', function () {
+                if (!getCookie('uname')) {
+                    location.href = './login.html'
+                    return
+                }
                 if (getCookie('shop')) {
                     shop = JSON.parse(getCookie('shop')).filter(elm => {
                         return elm.id != res1.id
@@ -65,7 +73,10 @@ $(function () {
                 }
                 $('.my_shop_num').text(JSON.parse(getCookie('shop')).length)
             })
+
+
         }
     })
+
 
 })

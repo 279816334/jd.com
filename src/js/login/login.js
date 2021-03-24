@@ -1,5 +1,8 @@
-import $ from '../library/jquery.js'
-
+import $ from '../library/jquery.js';
+import {
+    setCookie,
+    getCookie
+} from '../library/cookie.js';
 
 $(function () {
     let clickElm = $('.choice').children()
@@ -98,6 +101,7 @@ $(function () {
                 let code = JSON.parse(xhr).code;
                 console.log(code);
                 if (code == 1) {
+                    setCookie('uname', username, 24);
                     location.href = "../html/index.html";
                 } else if (code == 2) {
                     $("#error").text('用户名密码错误').css('display', 'block');
@@ -129,7 +133,6 @@ $(function () {
             clearTimeout(timer)
             let _this = this
             timer = setTimeout(function () {
-
                 $(_this).stop(true, false).children().eq(1).animate({
                     'opacity': 0
                 }, 200).siblings().delay(200).animate({

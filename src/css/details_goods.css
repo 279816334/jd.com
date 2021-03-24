@@ -8,25 +8,40 @@
   overflow: hidden;
   background-color: white;
   padding-bottom: 50px;
+  position: relative;
 }
 #_details .container {
   width: 1210px;
   height: auto;
+  overflow: hidden;
 }
 #_details .container > .left {
   float: left;
   width: 452px;
   height: 625px;
+  position: relative;
+  background: url();
 }
-#_details .container > .left > .top {
+#_details .container > .left > .show {
   width: 450px;
   height: 450px;
   border: 1px solid #eee;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 999;
 }
-#_details .container > .left > .top img {
+#_details .container > .left > .show img {
   width: 450px;
   height: 450px;
+}
+#_details .container > .left > .show .mask {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fede45;
+  opacity: 0.5;
+  display: none;
+  pointer-events: none;
 }
 #_details .container > .left .center {
   height: 58px;
@@ -51,11 +66,18 @@
   float: left;
   width: 380px;
   height: 58px;
-  background-color: red;
 }
 #_details .container > .left .center div ul > li {
   float: left;
   list-style: none;
+  width: 58px;
+  height: 58px;
+  margin: 0 10px;
+  border: 1px solid transparent;
+}
+#_details .container > .left .center div ul > li img {
+  width: 58px;
+  height: 58px;
 }
 #_details .container > .left .bottom {
   height: 80px;
@@ -92,6 +114,18 @@
 }
 #_details .container > .left .bottom .bottom:hover {
   border-color: #c81623;
+}
+#_details .container > .left .enlarge {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  z-index: 9999;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 800px;
+  left: 453px;
+  top: 0;
+  display: none;
 }
 #_details .container > .right {
   float: right;

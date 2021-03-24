@@ -118,17 +118,18 @@ $(function () {
         if (flag && flag1 && flag2) {
             $.ajax({
                 url: '../../interface/register_ok.php',
-                type: 'post',
+                type: 'POST',
                 data: {
                     username: username.val(),
                     password: password.val()
                 },
                 datatype: 'json',
                 success (xhr) {
-                    console.log(xhr);
-                },
-                error (xhr, info, error) {
-                    console.log(error);
+                    if (xhr) {
+                        console.log(1);
+                        $('#tbs3').css('display', 'block').siblings().css('display', 'none')
+                        $('._uname').text(username.val());
+                    }
                 }
             })
         }
